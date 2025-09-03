@@ -12,3 +12,8 @@ explain pid_t
 how top use getopt in c++
 how to use fork() in c++
 How was it useful: It helped furhter underdtand certin topics and helped visualized how the conecpt was used in code with examples
+
+
+Git control: Github
+Link: (Projecr is the PROJECT_1) https://github.com/ghughes2001/Operating_Systems.git
+Log: 
