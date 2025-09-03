@@ -9,6 +9,7 @@ This program manages child process
 #include <vector>
 #include <sys/types.h>
 #include <string>
+#include <sys/wait.h>
 
 using namespace std;
 
@@ -88,6 +89,26 @@ class OSS {
             return true;
         }
         bool childLaunched(int children) {
-            
+            pid_t childPid = fork();
+
+            if (childPid == 0) {
+                // execute program
+                string iterateString = to_string(iterations);
+                execl("./user", "user", iterateString.c_str(), static_cast<char*>(nullptr));
+
+                // if error
+                perror("execl failed");
+                exit(1);
+            } else if (childPid > 0) {
+                // fork
+                cout << "OSS: Launched child " << children << " (PID: " << childPid << ")" << endl;
+                processesRunning.push_back(childPid);
+                
+                return true;
+            } else {
+                // eror
+                perror("fork failed");
+                return false;
+            }
         }
 };
