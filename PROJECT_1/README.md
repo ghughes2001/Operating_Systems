@@ -7,3 +7,11 @@ Environment: Something like (linux, vi)
 How to compile the project: Type ’make’
 
 Example of how to run the project: 
+./oss -n 5 -s 3 -t 7
+
+
+
+Generative AI Used: CHatGPT
+Prompts:
+how top use getopt in c++
+

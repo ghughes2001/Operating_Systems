@@ -1,0 +1,93 @@
+/*
+Authour: Grant Hughes
+Date: September 3, 2025
+This program manages child process
+*/
+
+#include <iostream>
+#include <unistd.h>
+#include <vector>
+#include <sys/types.h>
+#include <string>
+
+using namespace std;
+
+class OSS {
+    private:
+        // class variables
+        int numberOfChilds;
+        int numberOfSimul;
+        int iterations;
+        vector<pid_t> processesRunning;
+    public:
+        // Constructor with default values if nohting is given
+        OSS(): numberOfChilds(1), numberOfSimul(1), iterations(1) {}
+
+        // help display
+        void help(const string& name) {
+            cout << "Usage: " << name << " [-h] [-n proc] [-s simul] [-t iter]" << endl;
+            cout << "Options:" << endl;
+            cout << "   -h     display help message and exit" << endl;
+            cout << "   -n proc    Number of children to launch (DEFAULT: " << numberOfChilds << ")" << endl;
+            cout << "   -s simul   Number of children running at same time (DEFAULT: " << numberOfSimul << ")" << endl;
+            cout << "   -t iter    Number of iterations for each children (DEFAULT: " << iterations << ")" << endl;
+            cout << "Example: " << name << " -n 5 -s 3 -t 7" << endl;
+        }
+
+        // grabbing command line option
+        bool commandOptions(int argc, char* argv[]) {
+            int opt;
+
+            optind = 1;
+
+            while ((opt = getopt(argc, argv, "hn:s:t:")) == -1) {
+                switch(opt) {
+                    case 'h':
+                        help(argv[0]);
+                        return false; // exit
+                    case 'n':
+                        try {
+                            numberOfChilds = stoi(optarg);
+                            if (numberOfSimul <= 0) {
+                                cerr << "ERROR: Number of children must be greater than 0" << endl;
+                                return false; // exit
+                            }
+                        } catch (const exception& e) {
+                            cerr << "ERROR: Invalid format for -n option" << endl;
+                            return false;
+                        }
+                        break;
+                    case 's':
+                        try {
+                            numberOfSimul = stoi(optarg);
+                            if (numberOfSimul <= 0) {
+                                cerr << "ERROR: Number of simul(s) must be positive" << endl;
+                                return false;
+                            }
+                        } catch (const exception& e) {
+                            cerr << "ERROR: Invalid format for -s option";
+                        }
+                        break;
+                    case 't':
+                        try {
+                            iterations = stoi(optarg);
+                            if (iterations <= 0) {
+                                cerr << "ERROR: Number of iterations must be postive" << endl;
+                                return false;
+                            }
+                        } catch (const exception& e) {
+                            cerr << "ERROR: Invalid format for -t option" << endl;
+                        }
+                        break;
+                    case '?':
+                        // getopt got error message
+                        help(argv[0]);
+                        return false;
+                }
+            }
+            return true;
+        }
+        bool childLaunched(int children) {
+            
+        }
+};
