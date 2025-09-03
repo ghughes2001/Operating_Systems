@@ -19,7 +19,7 @@ using namespace std;
 
 class OSS {
     private:
-        // class variables
+        // class instance variables
         int numberOfChilds;
         int numberOfSimul;
         int iterations;
@@ -27,6 +27,8 @@ class OSS {
     public:
         // Constructor with default values if nohting is given
         OSS(): numberOfChilds(1), numberOfSimul(1), iterations(1) {}
+        // Getter method for instance variables
+
 
         // help display
         void help(const string& name) {
@@ -154,5 +156,33 @@ class OSS {
         }
         // method to execute program (MAIN)
         bool run() {
+            // varaibles to track when program starts and ends
+            int programLaunched = 0;
+            int programCompleted = 0;
+
+            while (programCompleted < numberOfChilds) {
+                // created a process until limit is reached
+                while(static_cast<int>(processesRunning.size()) < numberOfSimul && programLaunched < numberOfChilds)
+                {
+                    if (!childLaunched(programLaunched + 1))
+                    {
+                        cerr << "Error to launch child process" << endl;
+                        return 1;
+                    }
+                    programLaunched++;
+                }
+                // waiting for child process
+                if (!processesRunning.empty())
+                {
+                    if (waitForChildren())
+                    {
+                        programCompleted++;
+                    } else {
+                        cerr << "ERROR: Wating for child process error" << endl;
+                        return 1;
+                    }
+                }
+            }
+            return 0;
         }
 };
