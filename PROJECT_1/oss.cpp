@@ -107,7 +107,7 @@ class OSS {
                 
                 return true;
             } else {
-                // eror
+                // error
                 perror("fork failed");
                 return false;
             }
@@ -148,5 +148,8 @@ class OSS {
                 perror("wait failed");        
                 return false;
             }
+        }
+        bool run() {
+            
         }
 };
