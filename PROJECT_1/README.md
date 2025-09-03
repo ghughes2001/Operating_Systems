@@ -13,5 +13,6 @@ Example of how to run the project:
 
 Generative AI Used: CHatGPT
 Prompts:
+explain pid_t
 how top use getopt in c++
 how to use fork() in c++

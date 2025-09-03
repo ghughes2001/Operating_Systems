@@ -10,6 +10,7 @@ This program manages child process
 #include <sys/types.h>
 #include <string>
 #include <sys/wait.h>
+#include <getopt.h>
 
 using namespace std;
 
@@ -100,7 +101,7 @@ class OSS {
                 perror("execl failed");
                 exit(1);
             } else if (childPid > 0) {
-                // fork
+                // fork for parent
                 cout << "OSS: Launched child " << children << " (PID: " << childPid << ")" << endl;
                 processesRunning.push_back(childPid);
                 
@@ -108,6 +109,43 @@ class OSS {
             } else {
                 // eror
                 perror("fork failed");
+                return false;
+            }
+        }
+        // wait() for child to complete
+        bool waitForChildren() {
+            if (processesRunning.empty()) {
+                return false;
+            }
+            int status;
+            pid_t finishedPid = wait(&status);
+
+            if (finishedPid > 0) {
+                // Remove from running processes list
+                auto it = find(processesRunning.begin(), processesRunning.end(), finishedPid);
+                
+                if (it != processesRunning.end()) {
+                    processesRunning.erase(it);
+                }
+                cout << "OSS: Child with PID " << finishedPid << " has finished";
+                
+                // Check how the child terminated
+                if (WIFEXITED(status)) {
+                    int exitCode = WEXITSTATUS(status);
+                    
+                    cout << " with exit code " << exitCode;
+                    
+                    if (exitCode != 0) {
+                        cout << " (ERROR)";
+                    }
+                } else if (WIFSIGNALED(status)) {
+                    cout << " due to signal " << WTERMSIG(status);
+                    }
+                cout << endl;
+                
+                return true;
+            } else {
+                perror("wait failed");        
                 return false;
             }
         }
