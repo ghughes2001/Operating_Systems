@@ -11,6 +11,9 @@ This program manages child process
 #include <string>
 #include <sys/wait.h>
 #include <getopt.h>
+#include <algorithm>
+#include <cstdlib>
+#include <cstdio>
 
 using namespace std;
 
@@ -42,7 +45,7 @@ class OSS {
 
             optind = 1;
 
-            while ((opt = getopt(argc, argv, "hn:s:t:")) == -1) {
+            while ((opt = getopt(argc, argv, "hn:s:t:")) != -1) {
                 switch(opt) {
                     case 'h':
                         help(argv[0]);
@@ -149,7 +152,7 @@ class OSS {
                 return false;
             }
         }
+        // method to execute program (MAIN)
         bool run() {
-            
         }
 };
