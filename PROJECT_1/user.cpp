@@ -36,16 +36,16 @@ int main(int argc, char* argv[])
     pid_t pid = getpid();
     pid_t ppid = getppid();
 
-    for (int i = 0; i <= iterations; i++)
+    for (int i = 1; i <= iterations; i++)
     {
         // Before 1 second sleep
-        cout << "USER PID: " << pid << " PPID: " << ppid << " Iteration: " << i << "before sleeping" << endl;
+        cout << "USER PID: " << pid << " PPID:" << ppid << " Iteration:" << i << " before sleeping" << endl;
 
         // 1 second sleep
         sleep(1);
 
         // After 1 second sleep
-        cout << "USER PID: " << pid << " PPID: " << ppid << " Iteration: " << i << "after sleeping" << endl;
+        cout << "USER PID: " << pid << " PPID:" << ppid << " Iteration:" << i << " after sleeping" << endl;
     }
     return 0;
 }
