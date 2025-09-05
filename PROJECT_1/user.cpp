@@ -17,7 +17,7 @@ int main(int argc, char* argv[])
 {
     if (argc != 2)
     {
-        cerr << "Usage: " <<  argv[0] << "iterations" << endl;
+        cerr << "Usage:" <<  argv[0] << " <iterations>" << endl;
         return 1;
     }
     int iterations = 0;
@@ -39,13 +39,13 @@ int main(int argc, char* argv[])
     for (int i = 1; i <= iterations; i++)
     {
         // Before 1 second sleep
-        cout << "USER PID: " << pid << " PPID:" << ppid << " Iteration:" << i << " before sleeping" << endl;
+        cout << "USER PID:" << pid << " PPID:" << ppid << " Iteration:" << i << " before sleeping" << endl;
 
         // 1 second sleep
         sleep(1);
 
         // After 1 second sleep
-        cout << "USER PID: " << pid << " PPID:" << ppid << " Iteration:" << i << " after sleeping" << endl;
+        cout << "USER PID:" << pid << " PPID:" << ppid << " Iteration:" << i << " after sleeping" << endl;
     }
     return 0;
 }
