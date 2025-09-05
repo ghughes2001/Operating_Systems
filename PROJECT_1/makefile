@@ -13,5 +13,6 @@ user: user.cpp
 
 clean:
 	rm -f oss user *.o
+	rm -rf *.dSYM
 
 .PHONY: all clean
