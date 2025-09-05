@@ -49,7 +49,7 @@ class OSS {
         bool commandOptions(int argc, char* argv[]) {
             int opt;
 
-            optind = 1;
+            optind = 1; // making sure getopt starts at the first command argument each time
 
             while ((opt = getopt(argc, argv, "hn:s:t:")) != -1) {
                 switch(opt) {
@@ -59,13 +59,13 @@ class OSS {
                     case 'n':
                         try {
                             numberOfChilds = stoi(optarg);
-                            if (numberOfSimul <= 0) {
+                            if (numberOfChilds <= 0) {
                                 cerr << "ERROR: Number of children must be greater than 0" << endl;
                                 return false; // exit
                             }
                         } catch (const exception& e) {
                             cerr << "ERROR: Invalid format for -n option" << endl;
-                            return false;
+                            return false; // exit
                         }
                         break;
                     case 's':
@@ -77,6 +77,7 @@ class OSS {
                             }
                         } catch (const exception& e) {
                             cerr << "ERROR: Invalid format for -s option";
+                            return false; // exit
                         }
                         break;
                     case 't':
@@ -88,6 +89,7 @@ class OSS {
                             }
                         } catch (const exception& e) {
                             cerr << "ERROR: Invalid format for -t option" << endl;
+                            return false; // exit
                         }
                         break;
                     case '?':
