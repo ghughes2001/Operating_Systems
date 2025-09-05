@@ -28,6 +28,10 @@ class OSS {
         // Constructor with default values if nohting is given
         OSS(): numberOfChilds(1), numberOfSimul(1), iterations(1) {}
         // Getter method for instance variables
+        int getNumberOfChilds() const {return numberOfChilds;}
+        int getNumberOfSimul() const {return numberOfSimul;}
+        int getIterations() const {return iterations;}
+        size_t getProcessesRunning() const { return processesRunning.size();}
 
 
         // help display
@@ -186,3 +190,22 @@ class OSS {
             return 0;
         }
 };
+
+int main(int argc, char* argv[])
+{
+    // instantiating an bject for the OSS class
+    OSS processManager;
+
+    // parsing command line arguments
+    if (!processManager.commandOptions(argc, argv))
+    {
+        // seeing if the help option is called
+        if (argc >= 2 && string(argv[1]) == "-h")
+        {
+            return 0;
+        }
+        return 1;
+    }
+    // run the program
+    return processManager.run();
+}
