@@ -1,7 +1,7 @@
 # author: Grant Hughes
 
-CXX: g++
-CXXFLAGS: -Wall -ansi -pedantic -g -std=c++11
+CXX = g++
+CXXFLAGS = -Wall -ansi -pedantic -g -std=c++11
 
 all: oss user
 
