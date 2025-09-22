@@ -3,8 +3,9 @@ Date: September 15, 2025
 Environment:
 How to compile the project:
 Example of how to run the project: 
-
-
+./oss -n 5 -s 2 -t 2.5 -i 0.5
+Clean:
+make clean
 
 Generative AI used: CHatGPT
 Prompts:
