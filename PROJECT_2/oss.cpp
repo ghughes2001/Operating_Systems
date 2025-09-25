@@ -24,35 +24,37 @@ File: The OSS process like..
 
 using namespace std;
 
-struct PCB {
-    int occupied; // 1 if yes, 0 if no
-    pid_t pid; // id
-    int startSeconds; // start time in seconds
-    int startNano; // star time in nano seconds
-};
-
-// shared memory
-
+// shared memory structure for simulated clock
 struct SimulatedClock {
     int seconds;
     int nanoSeconds;
 };
 
-// global variables
+// process control block
+struct PCB {
+    int occupied;           // 1 if occupied, 0 if free
+    pid_t pid;             // process id
+    int startSeconds;      // start time in seconds
+    int startNano;         // start time in nanoseconds
+};
+
+// global variables for cleanup
 int shmid = -1;
 SimulatedClock* sharedClock = nullptr;
 vector<PCB> processTable(20);
 vector<pid_t> activePids;
 
-// professor's signal handler
-void signal_handler(int sig)
-{
+// Signal handler for cleanup (professor's)
+void signal_handler(int sig) {
+    (void)sig; // Suppress unused parameter warning
+    
     // code to send kill signal to all children based on their PIDs in process table
     for (int i = 0; i < 20; i++) {
         if (processTable[i].occupied && processTable[i].pid > 0) {
             kill(processTable[i].pid, SIGTERM);
         }
     }
+    
     // code to free up shared memory
     if (sharedClock != nullptr) {
         shmdt(sharedClock);
@@ -60,11 +62,11 @@ void signal_handler(int sig)
     if (shmid != -1) {
         shmctl(shmid, IPC_RMID, nullptr);
     }
+    
     exit(1);
 }
 
-void printUsage()
-{
+void printUsage() {
     cout << "Usage: oss [-h] [-n proc] [-s simul] [-t timelimitForChildren] [-i intervalInMsToLaunchChildren]" << endl;
     cout << "  -h: Display this help message" << endl;
     cout << "  -n proc: Total number of processes to launch" << endl;
@@ -73,10 +75,9 @@ void printUsage()
     cout << "  -i interval: Minimum interval between launches (in seconds, can be float)" << endl;
 }
 
-void incrementClock(SimulatedClock* clock, int incrementNano = 100000)
+void incrementClock(SimulatedClock* clock, int increment_nano = 10000)
 {
-    clock->nanoSeconds += incrementNano;
-    
+    clock->nanoSeconds += increment_nano;
     if (clock->nanoSeconds >= 1000000000) {
         clock->seconds++;
         clock->nanoSeconds -= 1000000000;
@@ -95,24 +96,23 @@ bool isTimeToLaunch(SimulatedClock* clock, int lastLaunchS, int lastLaunchN, dou
     return (currentTime - lastLaunchTime) >= intervalTime;
 }
 
-void printProcessTable(SimulatedClock* clock)
-{
-    cout << "OSS PID:" << getpid() << " SysClockS: " << clock->seconds << " SysClockNano: " << clock->nanoSeconds << endl;
+void printProcessTable(SimulatedClock* clock) {
+    cout << "OSS PID:" << getpid() << " SysClockS: " << clock->seconds 
+         << " SysclockNano: " << clock->nanoSeconds << endl;
     cout << "Process Table:" << endl;
     cout << "Entry Occupied PID    StartS StartN" << endl;
     
     for (int i = 0; i < 20; i++) {
         cout << setw(5) << i << " " 
-            << setw(8) << processTable[i].occupied << " "
-            << setw(6) << processTable[i].pid << " "
-            << setw(6) << processTable[i].startSeconds << " "
-            << setw(6) << processTable[i].startNano << endl;
+             << setw(8) << processTable[i].occupied << " "
+             << setw(6) << processTable[i].pid << " "
+             << setw(6) << processTable[i].startSeconds << " "
+             << setw(6) << processTable[i].startNano << endl;
     }
     cout << endl;
 }
 
-int findFreeSlot()
-{
+int findFreeSlot() {
     for (int i = 0; i < 20; i++) {
         if (processTable[i].occupied == 0) {
             return i;
@@ -124,8 +124,9 @@ int findFreeSlot()
 void launchWorker(int slot, double timeLimit, SimulatedClock* clock)
 {
     pid_t pid = fork();
+    
     if (pid == 0) {
-        // child process -> exec worker
+        // child process - exec worker
         int timeLimitSeconds = (int)timeLimit;
         int timeLimitNano = (int)((timeLimit - timeLimitSeconds) * 1000000000);
         
@@ -134,10 +135,9 @@ void launchWorker(int slot, double timeLimit, SimulatedClock* clock)
         
         execl("./worker", "worker", secondsStr.c_str(), nanoStr.c_str(), nullptr);
         perror("execl failed");
-        
         exit(1);
     } else if (pid > 0) {
-        // parent process -> update process table
+        // parent process
         processTable[slot].occupied = 1;
         processTable[slot].pid = pid;
         processTable[slot].startSeconds = clock->seconds;
@@ -151,12 +151,12 @@ void launchWorker(int slot, double timeLimit, SimulatedClock* clock)
 int main(int argc, char* argv[])
 {
     // defaults
-    int proc = 1;
+    int proc = 1;  
     int simul = 1;
     double timeLimit = 1.0;
     double interval = 0.2;
     
-    // parsingarse command line arguments
+    // parsing command line arguments
     int opt;
     while ((opt = getopt(argc, argv, "hn:s:t:i:")) != -1) {
         switch (opt) {
@@ -180,18 +180,23 @@ int main(int argc, char* argv[])
                 return 1;
         }
     }
+    
     cout << "OSS starting, PID:" << getpid() << " PPID:" << getppid() << endl;
     cout << "Called with:" << endl;
-    cout << "-n " << proc << "-s " << simul << "-t " << timeLimit << "-i " << interval << endl;
+    cout << "-n " << proc << endl;
+    cout << "-s " << simul << endl;
+    cout << "-t " << timeLimit << endl;
+    cout << "-i " << interval << endl;
     
-    // seting up signal handlers using professor's patter code
+    // set up signal handlers using professor's code
     signal(SIGALRM, signal_handler);
     signal(SIGINT, signal_handler);
     signal(SIGTERM, signal_handler);
-    // seting up alarm call
+    
+    // set up alarm call
     alarm(60);
     
-    // creating shared memory for clock
+    // create shared memory for clock
     key_t key = ftok(".", 'c');
     shmid = shmget(key, sizeof(SimulatedClock), IPC_CREAT | 0666);
     if (shmid == -1) {
@@ -204,6 +209,7 @@ int main(int argc, char* argv[])
         perror("shmat failed");
         return 1;
     }
+    
     // initialize clock
     sharedClock->seconds = 0;
     sharedClock->nanoSeconds = 0;
@@ -215,6 +221,7 @@ int main(int argc, char* argv[])
         processTable[i].startSeconds = 0;
         processTable[i].startNano = 0;
     }
+    
     int processesLaunched = 0;
     int activeProcesses = 0;
     int lastOutputS = -1;
@@ -226,9 +233,8 @@ int main(int argc, char* argv[])
     int totalProcesses = 0;
     long long totalRunTime = 0; // in nanoseconds
     
-    // main loop
     while (processesLaunched < proc || activeProcesses > 0) {
-        // increment clock
+        // Increment clock
         incrementClock(sharedClock);
         
         // output process table every half second
@@ -239,11 +245,11 @@ int main(int argc, char* argv[])
             lastOutputN = sharedClock->nanoSeconds;
         }
         
-        // check for terminated children (non-blocking)
+        // checking for terminated children (non-blocking)
         int status;
         pid_t terminatedPid = waitpid(-1, &status, WNOHANG);
         if (terminatedPid > 0) {
-            // Find and clear the process table entry
+            // finding and clear the process table entry
             for (int i = 0; i < 20; i++) {
                 if (processTable[i].pid == terminatedPid) {
                     // Calculate runtime
@@ -264,7 +270,8 @@ int main(int argc, char* argv[])
             activePids.erase(remove(activePids.begin(), activePids.end(), terminatedPid), activePids.end());
             activeProcesses--;
         }
-        // launch new process if conditions are met
+        
+        // launching new process if conditions are met
         if (processesLaunched < proc && activeProcesses < simul) {
             if (isTimeToLaunch(sharedClock, lastLaunchS, lastLaunchN, interval)) {
                 int slot = findFreeSlot();
@@ -278,12 +285,15 @@ int main(int argc, char* argv[])
             }
         }
     }
+    
+    // final output
     cout << "OSS PID:" << getpid() << " Terminating" << endl;
     cout << totalProcesses << " workers were launched and terminated" << endl;
     
     int totalSeconds = totalRunTime / 1000000000;
     int totalNano = totalRunTime % 1000000000;
-    cout << "Workers ran for a combined time of " << totalSeconds << " seconds " << totalNano << " nanoseconds." << endl;
+    cout << "Workers ran for a combined time of " << totalSeconds 
+         << " seconds " << totalNano << " nanoseconds." << endl;
     
     // cleanup
     shmdt(sharedClock);

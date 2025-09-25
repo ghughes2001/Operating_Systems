@@ -20,12 +20,12 @@ struct SimulatedClock {
     int nanoSeconds;
 };
 
-int main(int argc, char* argv[])
-{
+int main(int argc, char* argv[]) {
     if (argc != 3) {
         cerr << "Usage: " << argv[0] << " <seconds> <nanoseconds>" << endl;
         return 1;
     }
+    
     int maxSeconds = atoi(argv[1]);
     int maxNanoSeconds = atoi(argv[2]);
     
@@ -33,7 +33,7 @@ int main(int argc, char* argv[])
     cout << "Called with:" << endl;
     cout << "Interval: " << maxSeconds << " seconds, " << maxNanoSeconds << " nanoseconds" << endl;
     
-    // attaching to shared memory
+    // attach to shared memory
     key_t key = ftok(".", 'c');
     int shmid = shmget(key, sizeof(SimulatedClock), 0666);
     if (shmid == -1) {
@@ -61,8 +61,8 @@ int main(int argc, char* argv[])
     }
     
     cout << "WORKER PID:" << getpid() << " PPID:" << getppid() << endl;
-    cout << "SysClockS: " << sharedClock->seconds 
-         << " SysclockNano: " << sharedClock->nanoSeconds 
+    cout << "SysClockS: " << startSeconds 
+         << " SysclockNano: " << startNanoseconds 
          << " TermTimeS: " << termSeconds 
          << " TermTimeNano: " << termNanoseconds << endl;
     cout << "--Just Starting" << endl;
@@ -75,7 +75,7 @@ int main(int argc, char* argv[])
         int currentSeconds = sharedClock->seconds;
         int currentNanoseconds = sharedClock->nanoSeconds;
         
-        // Check if we should report a new second
+        // checking if we should report a new second
         if (currentSeconds > lastSecondsReported) {
             secondsPassed += (currentSeconds - lastSecondsReported);
             lastSecondsReported = currentSeconds;
@@ -88,7 +88,7 @@ int main(int argc, char* argv[])
             cout << "--" << secondsPassed << " seconds have passed since starting" << endl;
         }
         
-        // checking if termination has been reached
+        // checking if termination time has been reached
         if (currentSeconds > termSeconds || 
             (currentSeconds == termSeconds && currentNanoseconds >= termNanoseconds)) {
             
