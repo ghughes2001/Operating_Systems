@@ -3,7 +3,7 @@ Authour: Grant Hughes
 Date: September 2, 2025
 File: The OSS process like..
 - parsing command line arguments
-- creates shared memory
+- creates/manages shared memory
 - signal handling
 */
 
