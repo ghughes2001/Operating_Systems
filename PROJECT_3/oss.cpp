@@ -54,3 +54,59 @@ SimulatedClock* sharedClock = nullptr;
 vector<PCB> processTable(20);
 ofstream logFile;
 
+// signal handler
+void signal_handler(int sig)
+{
+    (void)sig;
+    
+    // Kill all children
+    for (int i = 0; i < 20; i++) 
+    {
+        if (processTable[i].occupied && processTable[i].pid > 0) 
+        {
+            kill(processTable[i].pid, SIGTERM);
+        }
+    }
+    // cleaning shared memory
+    if (sharedClock != nullptr) 
+    {
+        shmdt(sharedClock);
+    }
+    if (shmid != -1) 
+    {
+        shmctl(shmid, IPC_RMID, nullptr);
+    }
+    // cleaning message queue
+    if (msgid != -1) 
+    {
+        msgctl(msgid, IPC_RMID, nullptr);
+    }
+    // closing log file
+    if (logFile.is_open()) 
+    {
+        logFile.close();
+    }
+    exit(1);
+}
+
+void printUsage() 
+{
+    cout << "Usage: oss [-h] [-n proc] [-s simul] [-t timelimitForChildren] [-i intervalInMsToLaunchChildren] [-f logfile]" << endl;
+    cout << "  -h: Display this help message" << endl;
+    cout << "  -n proc: Total number of processes to launch" << endl;
+    cout << "  -s simul: Maximum number of simultaneous processes" << endl;
+    cout << "  -t time: Time limit for children (in simulated seconds, can be float)" << endl;
+    cout << "  -i interval: Minimum interval between launches (in seconds, can be float)" << endl;
+    cout << "  -f logfile: Log file name" << endl;
+}
+
+void log_output(const string& message) 
+{
+    cout << message;
+    
+    if (logFile.is_open()) 
+    {
+        logFile << message; //writing message in file
+    }
+}
+
