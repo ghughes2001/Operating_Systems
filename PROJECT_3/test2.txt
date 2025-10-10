@@ -1,0 +1,433 @@
+OSS PID:9915 SysClockS: 0 SysclockNano: 250000000
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        0      0      0      0            0
+    1        0      0      0      0            0
+    2        0      0      0      0            0
+    3        0      0      0      0            0
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Generating process with PID 9916 and putting it in process table at index 0 at time 0:500000000
+OSS PID:9915 SysClockS: 0 SysclockNano: 500000000
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9916      0 500000000            0
+    1        0      0      0      0            0
+    2        0      0      0      0            0
+    3        0      0      0      0            0
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 0 PID 9916 at time 0:500000000
+OSS: Receiving message from worker 0 PID 9916 at time 0:500000000
+OSS PID:9915 SysClockS: 0 SysclockNano: 750000000
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9916      0 500000000            1
+    1        0      0      0      0            0
+    2        0      0      0      0            0
+    3        0      0      0      0            0
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 0 PID 9916 at time 0:750000000
+OSS: Receiving message from worker 0 PID 9916 at time 0:750000000
+OSS PID:9915 SysClockS: 1 SysclockNano: 0
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9916      0 500000000            2
+    1        0      0      0      0            0
+    2        0      0      0      0            0
+    3        0      0      0      0            0
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Generating process with PID 9917 and putting it in process table at index 1 at time 1:0
+OSS PID:9915 SysClockS: 1 SysclockNano: 0
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9916      0 500000000            2
+    1        1   9917      1      0            0
+    2        0      0      0      0            0
+    3        0      0      0      0            0
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 1 PID 9917 at time 1:0
+OSS: Receiving message from worker 1 PID 9917 at time 1:0
+OSS: Sending message to worker 0 PID 9916 at time 1:125000000
+OSS: Receiving message from worker 0 PID 9916 at time 1:125000000
+OSS: Sending message to worker 1 PID 9917 at time 1:250000000
+OSS: Receiving message from worker 1 PID 9917 at time 1:250000000
+OSS: Sending message to worker 0 PID 9916 at time 1:375000000
+OSS: Receiving message from worker 0 PID 9916 at time 1:375000000
+OSS PID:9915 SysClockS: 1 SysclockNano: 500000000
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9916      0 500000000            4
+    1        1   9917      1      0            2
+    2        0      0      0      0            0
+    3        0      0      0      0            0
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 1 PID 9917 at time 1:500000000
+OSS: Receiving message from worker 1 PID 9917 at time 1:500000000
+OSS: Sending message to worker 0 PID 9916 at time 1:625000000
+OSS: Receiving message from worker 0 PID 9916 at time 1:625000000
+OSS: Sending message to worker 1 PID 9917 at time 1:750000000
+OSS: Receiving message from worker 1 PID 9917 at time 1:750000000
+OSS: Sending message to worker 0 PID 9916 at time 1:875000000
+OSS: Receiving message from worker 0 PID 9916 at time 1:875000000
+OSS PID:9915 SysClockS: 2 SysclockNano: 0
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9916      0 500000000            6
+    1        1   9917      1      0            4
+    2        0      0      0      0            0
+    3        0      0      0      0            0
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 1 PID 9917 at time 2:0
+OSS: Receiving message from worker 1 PID 9917 at time 2:0
+OSS: Sending message to worker 0 PID 9916 at time 2:125000000
+OSS: Receiving message from worker 0 PID 9916 at time 2:125000000
+OSS: Sending message to worker 1 PID 9917 at time 2:250000000
+OSS: Receiving message from worker 1 PID 9917 at time 2:250000000
+OSS: Sending message to worker 0 PID 9916 at time 2:375000000
+OSS: Receiving message from worker 0 PID 9916 at time 2:375000000
+OSS PID:9915 SysClockS: 2 SysclockNano: 500000000
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9916      0 500000000            8
+    1        1   9917      1      0            6
+    2        0      0      0      0            0
+    3        0      0      0      0            0
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 1 PID 9917 at time 2:500000000
+OSS: Receiving message from worker 1 PID 9917 at time 2:500000000
+OSS: Sending message to worker 0 PID 9916 at time 2:625000000
+OSS: Receiving message from worker 0 PID 9916 at time 2:625000000
+OSS: Sending message to worker 1 PID 9917 at time 2:750000000
+OSS: Receiving message from worker 1 PID 9917 at time 2:750000000
+OSS: Worker 1 PID 9917 is planning to terminate.
+OSS PID:9915 SysClockS: 3 SysclockNano: 0
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9916      0 500000000            9
+    1        0   9917      1      0            8
+    2        0      0      0      0            0
+    3        0      0      0      0            0
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Generating process with PID 9918 and putting it in process table at index 1 at time 3:0
+OSS PID:9915 SysClockS: 3 SysclockNano: 0
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9916      0 500000000            9
+    1        1   9918      3      0            0
+    2        0      0      0      0            0
+    3        0      0      0      0            0
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 0 PID 9916 at time 3:0
+OSS: Receiving message from worker 0 PID 9916 at time 3:0
+OSS: Sending message to worker 1 PID 9918 at time 3:125000000
+OSS: Receiving message from worker 1 PID 9918 at time 3:125000000
+OSS: Sending message to worker 0 PID 9916 at time 3:250000000
+OSS: Receiving message from worker 0 PID 9916 at time 3:250000000
+OSS: Sending message to worker 1 PID 9918 at time 3:375000000
+OSS: Receiving message from worker 1 PID 9918 at time 3:375000000
+OSS PID:9915 SysClockS: 3 SysclockNano: 500000000
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9916      0 500000000           11
+    1        1   9918      3      0            2
+    2        0      0      0      0            0
+    3        0      0      0      0            0
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 0 PID 9916 at time 3:500000000
+OSS: Receiving message from worker 0 PID 9916 at time 3:500000000
+OSS: Sending message to worker 1 PID 9918 at time 3:625000000
+OSS: Receiving message from worker 1 PID 9918 at time 3:625000000
+OSS: Sending message to worker 0 PID 9916 at time 3:750000000
+OSS: Receiving message from worker 0 PID 9916 at time 3:750000000
+OSS: Sending message to worker 1 PID 9918 at time 3:875000000
+OSS: Receiving message from worker 1 PID 9918 at time 3:875000000
+OSS PID:9915 SysClockS: 4 SysclockNano: 0
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9916      0 500000000           13
+    1        1   9918      3      0            4
+    2        0      0      0      0            0
+    3        0      0      0      0            0
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 0 PID 9916 at time 4:0
+OSS: Receiving message from worker 0 PID 9916 at time 4:0
+OSS: Worker 0 PID 9916 is planning to terminate.
+OSS: Sending message to worker 1 PID 9918 at time 4:250000000
+OSS: Receiving message from worker 1 PID 9918 at time 4:250000000
+OSS PID:9915 SysClockS: 4 SysclockNano: 500000000
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        0   9916      0 500000000           14
+    1        1   9918      3      0            5
+    2        0      0      0      0            0
+    3        0      0      0      0            0
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 1 PID 9918 at time 4:500000000
+OSS: Receiving message from worker 1 PID 9918 at time 4:500000000
+OSS: Sending message to worker 1 PID 9918 at time 4:750000000
+OSS: Receiving message from worker 1 PID 9918 at time 4:750000000
+OSS PID:9915 SysClockS: 5 SysclockNano: 0
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        0   9916      0 500000000           14
+    1        1   9918      3      0            7
+    2        0      0      0      0            0
+    3        0      0      0      0            0
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 1 PID 9918 at time 5:0
+OSS: Receiving message from worker 1 PID 9918 at time 5:0
+OSS: Sending message to worker 1 PID 9918 at time 5:250000000
+OSS: Receiving message from worker 1 PID 9918 at time 5:250000000
+OSS PID:9915 SysClockS: 5 SysclockNano: 500000000
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        0   9916      0 500000000           14
+    1        1   9918      3      0            9
+    2        0      0      0      0            0
+    3        0      0      0      0            0
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 1 PID 9918 at time 5:500000000
+OSS: Receiving message from worker 1 PID 9918 at time 5:500000000
+OSS: Worker 1 PID 9918 is planning to terminate.
+OSS PID:9915 Terminating
+3 workers were launched
+Total messages sent from OSS: 32

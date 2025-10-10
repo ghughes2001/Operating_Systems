@@ -1,0 +1,1479 @@
+OSS PID:9990 SysClockS: 0 SysclockNano: 250000000
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        0      0      0      0            0
+    1        0      0      0      0            0
+    2        0      0      0      0            0
+    3        0      0      0      0            0
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS PID:9990 SysClockS: 0 SysclockNano: 750000000
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        0      0      0      0            0
+    1        0      0      0      0            0
+    2        0      0      0      0            0
+    3        0      0      0      0            0
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Generating process with PID 9991 and putting it in process table at index 0 at time 0:750000000
+OSS PID:9990 SysClockS: 0 SysclockNano: 750000000
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9991      0 750000000            0
+    1        0      0      0      0            0
+    2        0      0      0      0            0
+    3        0      0      0      0            0
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 0 PID 9991 at time 0:750000000
+OSS: Receiving message from worker 0 PID 9991 at time 0:750000000
+OSS PID:9990 SysClockS: 1 SysclockNano: 0
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9991      0 750000000            1
+    1        0      0      0      0            0
+    2        0      0      0      0            0
+    3        0      0      0      0            0
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 0 PID 9991 at time 1:0
+OSS: Receiving message from worker 0 PID 9991 at time 1:0
+OSS: Sending message to worker 0 PID 9991 at time 1:250000000
+OSS: Receiving message from worker 0 PID 9991 at time 1:250000000
+OSS PID:9990 SysClockS: 1 SysclockNano: 500000000
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9991      0 750000000            3
+    1        0      0      0      0            0
+    2        0      0      0      0            0
+    3        0      0      0      0            0
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Generating process with PID 9992 and putting it in process table at index 1 at time 1:500000000
+OSS PID:9990 SysClockS: 1 SysclockNano: 500000000
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9991      0 750000000            3
+    1        1   9992      1 500000000            0
+    2        0      0      0      0            0
+    3        0      0      0      0            0
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 1 PID 9992 at time 1:500000000
+OSS: Receiving message from worker 1 PID 9992 at time 1:500000000
+OSS: Sending message to worker 0 PID 9991 at time 1:625000000
+OSS: Receiving message from worker 0 PID 9991 at time 1:625000000
+OSS: Sending message to worker 1 PID 9992 at time 1:750000000
+OSS: Receiving message from worker 1 PID 9992 at time 1:750000000
+OSS: Sending message to worker 0 PID 9991 at time 1:875000000
+OSS: Receiving message from worker 0 PID 9991 at time 1:875000000
+OSS PID:9990 SysClockS: 2 SysclockNano: 0
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9991      0 750000000            5
+    1        1   9992      1 500000000            2
+    2        0      0      0      0            0
+    3        0      0      0      0            0
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 1 PID 9992 at time 2:0
+OSS: Receiving message from worker 1 PID 9992 at time 2:0
+OSS: Generating process with PID 9993 and putting it in process table at index 2 at time 2:125000000
+OSS PID:9990 SysClockS: 2 SysclockNano: 125000000
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9991      0 750000000            5
+    1        1   9992      1 500000000            3
+    2        1   9993      2 125000000            0
+    3        0      0      0      0            0
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 2 PID 9993 at time 2:125000000
+OSS: Receiving message from worker 2 PID 9993 at time 2:125000000
+OSS: Sending message to worker 0 PID 9991 at time 2:208333333
+OSS: Receiving message from worker 0 PID 9991 at time 2:208333333
+OSS: Sending message to worker 1 PID 9992 at time 2:291666666
+OSS: Receiving message from worker 1 PID 9992 at time 2:291666666
+OSS: Sending message to worker 2 PID 9993 at time 2:374999999
+OSS: Receiving message from worker 2 PID 9993 at time 2:374999999
+OSS: Sending message to worker 0 PID 9991 at time 2:458333332
+OSS: Receiving message from worker 0 PID 9991 at time 2:458333332
+OSS PID:9990 SysClockS: 2 SysclockNano: 541666665
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9991      0 750000000            7
+    1        1   9992      1 500000000            4
+    2        1   9993      2 125000000            2
+    3        0      0      0      0            0
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 1 PID 9992 at time 2:541666665
+OSS: Receiving message from worker 1 PID 9992 at time 2:541666665
+OSS: Sending message to worker 2 PID 9993 at time 2:624999998
+OSS: Receiving message from worker 2 PID 9993 at time 2:624999998
+OSS: Sending message to worker 0 PID 9991 at time 2:708333331
+OSS: Receiving message from worker 0 PID 9991 at time 2:708333331
+OSS: Generating process with PID 9995 and putting it in process table at index 3 at time 2:791666664
+OSS PID:9990 SysClockS: 2 SysclockNano: 791666664
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9991      0 750000000            8
+    1        1   9992      1 500000000            5
+    2        1   9993      2 125000000            3
+    3        1   9995      2 791666664            0
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 1 PID 9992 at time 2:791666664
+OSS: Receiving message from worker 1 PID 9992 at time 2:791666664
+OSS: Sending message to worker 2 PID 9993 at time 2:854166664
+OSS: Receiving message from worker 2 PID 9993 at time 2:854166664
+OSS: Sending message to worker 3 PID 9995 at time 2:916666664
+OSS: Receiving message from worker 3 PID 9995 at time 2:916666664
+OSS: Sending message to worker 0 PID 9991 at time 2:979166664
+OSS: Receiving message from worker 0 PID 9991 at time 2:979166664
+OSS PID:9990 SysClockS: 3 SysclockNano: 41666664
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9991      0 750000000            9
+    1        1   9992      1 500000000            6
+    2        1   9993      2 125000000            4
+    3        1   9995      2 791666664            1
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 1 PID 9992 at time 3:41666664
+OSS: Receiving message from worker 1 PID 9992 at time 3:41666664
+OSS: Sending message to worker 2 PID 9993 at time 3:104166664
+OSS: Receiving message from worker 2 PID 9993 at time 3:104166664
+OSS: Sending message to worker 3 PID 9995 at time 3:166666664
+OSS: Receiving message from worker 3 PID 9995 at time 3:166666664
+OSS: Sending message to worker 0 PID 9991 at time 3:229166664
+OSS: Receiving message from worker 0 PID 9991 at time 3:229166664
+OSS: Sending message to worker 1 PID 9992 at time 3:291666664
+OSS: Receiving message from worker 1 PID 9992 at time 3:291666664
+OSS: Sending message to worker 2 PID 9993 at time 3:354166664
+OSS: Receiving message from worker 2 PID 9993 at time 3:354166664
+OSS: Sending message to worker 3 PID 9995 at time 3:416666664
+OSS: Receiving message from worker 3 PID 9995 at time 3:416666664
+OSS: Sending message to worker 0 PID 9991 at time 3:479166664
+OSS: Receiving message from worker 0 PID 9991 at time 3:479166664
+OSS: Worker 0 PID 9991 is planning to terminate.
+OSS PID:9990 SysClockS: 3 SysclockNano: 562499997
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        0   9991      0 750000000           11
+    1        1   9992      1 500000000            8
+    2        1   9993      2 125000000            6
+    3        1   9995      2 791666664            3
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Generating process with PID 9996 and putting it in process table at index 0 at time 3:562499997
+OSS PID:9990 SysClockS: 3 SysclockNano: 562499997
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9996      3 562499997            0
+    1        1   9992      1 500000000            8
+    2        1   9993      2 125000000            6
+    3        1   9995      2 791666664            3
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 1 PID 9992 at time 3:562499997
+OSS: Receiving message from worker 1 PID 9992 at time 3:562499997
+OSS: Sending message to worker 2 PID 9993 at time 3:624999997
+OSS: Receiving message from worker 2 PID 9993 at time 3:624999997
+OSS: Sending message to worker 3 PID 9995 at time 3:687499997
+OSS: Receiving message from worker 3 PID 9995 at time 3:687499997
+OSS: Sending message to worker 0 PID 9996 at time 3:749999997
+OSS: Receiving message from worker 0 PID 9996 at time 3:749999997
+OSS: Sending message to worker 1 PID 9992 at time 3:812499997
+OSS: Receiving message from worker 1 PID 9992 at time 3:812499997
+OSS: Sending message to worker 2 PID 9993 at time 3:874999997
+OSS: Receiving message from worker 2 PID 9993 at time 3:874999997
+OSS: Sending message to worker 3 PID 9995 at time 3:937499997
+OSS: Receiving message from worker 3 PID 9995 at time 3:937499997
+OSS: Sending message to worker 0 PID 9996 at time 3:999999997
+OSS: Receiving message from worker 0 PID 9996 at time 3:999999997
+OSS PID:9990 SysClockS: 4 SysclockNano: 62499997
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9996      3 562499997            2
+    1        1   9992      1 500000000           10
+    2        1   9993      2 125000000            8
+    3        1   9995      2 791666664            5
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 1 PID 9992 at time 4:62499997
+OSS: Receiving message from worker 1 PID 9992 at time 4:62499997
+OSS: Sending message to worker 2 PID 9993 at time 4:124999997
+OSS: Receiving message from worker 2 PID 9993 at time 4:124999997
+OSS: Sending message to worker 3 PID 9995 at time 4:187499997
+OSS: Receiving message from worker 3 PID 9995 at time 4:187499997
+OSS: Sending message to worker 0 PID 9996 at time 4:249999997
+OSS: Receiving message from worker 0 PID 9996 at time 4:249999997
+OSS: Sending message to worker 1 PID 9992 at time 4:312499997
+OSS: Receiving message from worker 1 PID 9992 at time 4:312499997
+OSS: Sending message to worker 2 PID 9993 at time 4:374999997
+OSS: Receiving message from worker 2 PID 9993 at time 4:374999997
+OSS: Sending message to worker 3 PID 9995 at time 4:437499997
+OSS: Receiving message from worker 3 PID 9995 at time 4:437499997
+OSS: Sending message to worker 0 PID 9996 at time 4:499999997
+OSS: Receiving message from worker 0 PID 9996 at time 4:499999997
+OSS PID:9990 SysClockS: 4 SysclockNano: 562499997
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9996      3 562499997            4
+    1        1   9992      1 500000000           12
+    2        1   9993      2 125000000           10
+    3        1   9995      2 791666664            7
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 1 PID 9992 at time 4:562499997
+OSS: Receiving message from worker 1 PID 9992 at time 4:562499997
+OSS: Sending message to worker 2 PID 9993 at time 4:624999997
+OSS: Receiving message from worker 2 PID 9993 at time 4:624999997
+OSS: Sending message to worker 3 PID 9995 at time 4:687499997
+OSS: Receiving message from worker 3 PID 9995 at time 4:687499997
+OSS: Sending message to worker 0 PID 9996 at time 4:749999997
+OSS: Receiving message from worker 0 PID 9996 at time 4:749999997
+OSS: Sending message to worker 1 PID 9992 at time 4:812499997
+OSS: Receiving message from worker 1 PID 9992 at time 4:812499997
+OSS: Sending message to worker 2 PID 9993 at time 4:874999997
+OSS: Receiving message from worker 2 PID 9993 at time 4:874999997
+OSS: Sending message to worker 3 PID 9995 at time 4:937499997
+OSS: Receiving message from worker 3 PID 9995 at time 4:937499997
+OSS: Sending message to worker 0 PID 9996 at time 4:999999997
+OSS: Receiving message from worker 0 PID 9996 at time 4:999999997
+OSS PID:9990 SysClockS: 5 SysclockNano: 62499997
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9996      3 562499997            6
+    1        1   9992      1 500000000           14
+    2        1   9993      2 125000000           12
+    3        1   9995      2 791666664            9
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 1 PID 9992 at time 5:62499997
+OSS: Receiving message from worker 1 PID 9992 at time 5:62499997
+OSS: Sending message to worker 2 PID 9993 at time 5:124999997
+OSS: Receiving message from worker 2 PID 9993 at time 5:124999997
+OSS: Sending message to worker 3 PID 9995 at time 5:187499997
+OSS: Receiving message from worker 3 PID 9995 at time 5:187499997
+OSS: Sending message to worker 0 PID 9996 at time 5:249999997
+OSS: Receiving message from worker 0 PID 9996 at time 5:249999997
+OSS: Sending message to worker 1 PID 9992 at time 5:312499997
+OSS: Receiving message from worker 1 PID 9992 at time 5:312499997
+OSS: Sending message to worker 2 PID 9993 at time 5:374999997
+OSS: Receiving message from worker 2 PID 9993 at time 5:374999997
+OSS: Sending message to worker 3 PID 9995 at time 5:437499997
+OSS: Receiving message from worker 3 PID 9995 at time 5:437499997
+OSS: Sending message to worker 0 PID 9996 at time 5:499999997
+OSS: Receiving message from worker 0 PID 9996 at time 5:499999997
+OSS PID:9990 SysClockS: 5 SysclockNano: 562499997
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9996      3 562499997            8
+    1        1   9992      1 500000000           16
+    2        1   9993      2 125000000           14
+    3        1   9995      2 791666664           11
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 1 PID 9992 at time 5:562499997
+OSS: Receiving message from worker 1 PID 9992 at time 5:562499997
+OSS: Sending message to worker 2 PID 9993 at time 5:624999997
+OSS: Receiving message from worker 2 PID 9993 at time 5:624999997
+OSS: Sending message to worker 3 PID 9995 at time 5:687499997
+OSS: Receiving message from worker 3 PID 9995 at time 5:687499997
+OSS: Sending message to worker 0 PID 9996 at time 5:749999997
+OSS: Receiving message from worker 0 PID 9996 at time 5:749999997
+OSS: Sending message to worker 1 PID 9992 at time 5:812499997
+OSS: Receiving message from worker 1 PID 9992 at time 5:812499997
+OSS: Sending message to worker 2 PID 9993 at time 5:874999997
+OSS: Receiving message from worker 2 PID 9993 at time 5:874999997
+OSS: Sending message to worker 3 PID 9995 at time 5:937499997
+OSS: Receiving message from worker 3 PID 9995 at time 5:937499997
+OSS: Sending message to worker 0 PID 9996 at time 5:999999997
+OSS: Receiving message from worker 0 PID 9996 at time 5:999999997
+OSS PID:9990 SysClockS: 6 SysclockNano: 62499997
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9996      3 562499997           10
+    1        1   9992      1 500000000           18
+    2        1   9993      2 125000000           16
+    3        1   9995      2 791666664           13
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 1 PID 9992 at time 6:62499997
+OSS: Receiving message from worker 1 PID 9992 at time 6:62499997
+OSS: Sending message to worker 2 PID 9993 at time 6:124999997
+OSS: Receiving message from worker 2 PID 9993 at time 6:124999997
+OSS: Sending message to worker 3 PID 9995 at time 6:187499997
+OSS: Receiving message from worker 3 PID 9995 at time 6:187499997
+OSS: Sending message to worker 0 PID 9996 at time 6:249999997
+OSS: Receiving message from worker 0 PID 9996 at time 6:249999997
+OSS: Sending message to worker 1 PID 9992 at time 6:312499997
+OSS: Receiving message from worker 1 PID 9992 at time 6:312499997
+OSS: Sending message to worker 2 PID 9993 at time 6:374999997
+OSS: Receiving message from worker 2 PID 9993 at time 6:374999997
+OSS: Sending message to worker 3 PID 9995 at time 6:437499997
+OSS: Receiving message from worker 3 PID 9995 at time 6:437499997
+OSS: Sending message to worker 0 PID 9996 at time 6:499999997
+OSS: Receiving message from worker 0 PID 9996 at time 6:499999997
+OSS PID:9990 SysClockS: 6 SysclockNano: 562499997
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9996      3 562499997           12
+    1        1   9992      1 500000000           20
+    2        1   9993      2 125000000           18
+    3        1   9995      2 791666664           15
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 1 PID 9992 at time 6:562499997
+OSS: Receiving message from worker 1 PID 9992 at time 6:562499997
+OSS: Worker 1 PID 9992 is planning to terminate.
+OSS: Generating process with PID 9997 and putting it in process table at index 1 at time 6:645833330
+OSS PID:9990 SysClockS: 6 SysclockNano: 645833330
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9996      3 562499997           12
+    1        1   9997      6 645833330            0
+    2        1   9993      2 125000000           18
+    3        1   9995      2 791666664           15
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 2 PID 9993 at time 6:645833330
+OSS: Receiving message from worker 2 PID 9993 at time 6:645833330
+OSS: Sending message to worker 3 PID 9995 at time 6:708333330
+OSS: Receiving message from worker 3 PID 9995 at time 6:708333330
+OSS: Sending message to worker 0 PID 9996 at time 6:770833330
+OSS: Receiving message from worker 0 PID 9996 at time 6:770833330
+OSS: Sending message to worker 1 PID 9997 at time 6:833333330
+OSS: Receiving message from worker 1 PID 9997 at time 6:833333330
+OSS: Sending message to worker 2 PID 9993 at time 6:895833330
+OSS: Receiving message from worker 2 PID 9993 at time 6:895833330
+OSS: Sending message to worker 3 PID 9995 at time 6:958333330
+OSS: Receiving message from worker 3 PID 9995 at time 6:958333330
+OSS PID:9990 SysClockS: 7 SysclockNano: 20833330
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9996      3 562499997           13
+    1        1   9997      6 645833330            1
+    2        1   9993      2 125000000           20
+    3        1   9995      2 791666664           17
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 0 PID 9996 at time 7:20833330
+OSS: Receiving message from worker 0 PID 9996 at time 7:20833330
+OSS: Sending message to worker 1 PID 9997 at time 7:83333330
+OSS: Receiving message from worker 1 PID 9997 at time 7:83333330
+OSS: Sending message to worker 2 PID 9993 at time 7:145833330
+OSS: Receiving message from worker 2 PID 9993 at time 7:145833330
+OSS: Sending message to worker 3 PID 9995 at time 7:208333330
+OSS: Receiving message from worker 3 PID 9995 at time 7:208333330
+OSS: Sending message to worker 0 PID 9996 at time 7:270833330
+OSS: Receiving message from worker 0 PID 9996 at time 7:270833330
+OSS: Sending message to worker 1 PID 9997 at time 7:333333330
+OSS: Receiving message from worker 1 PID 9997 at time 7:333333330
+OSS: Sending message to worker 2 PID 9993 at time 7:395833330
+OSS: Receiving message from worker 2 PID 9993 at time 7:395833330
+OSS: Sending message to worker 3 PID 9995 at time 7:458333330
+OSS: Receiving message from worker 3 PID 9995 at time 7:458333330
+OSS PID:9990 SysClockS: 7 SysclockNano: 520833330
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9996      3 562499997           15
+    1        1   9997      6 645833330            3
+    2        1   9993      2 125000000           22
+    3        1   9995      2 791666664           19
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 0 PID 9996 at time 7:520833330
+OSS: Receiving message from worker 0 PID 9996 at time 7:520833330
+OSS: Sending message to worker 1 PID 9997 at time 7:583333330
+OSS: Receiving message from worker 1 PID 9997 at time 7:583333330
+OSS: Sending message to worker 2 PID 9993 at time 7:645833330
+OSS: Receiving message from worker 2 PID 9993 at time 7:645833330
+OSS: Sending message to worker 3 PID 9995 at time 7:708333330
+OSS: Receiving message from worker 3 PID 9995 at time 7:708333330
+OSS: Sending message to worker 0 PID 9996 at time 7:770833330
+OSS: Receiving message from worker 0 PID 9996 at time 7:770833330
+OSS: Sending message to worker 1 PID 9997 at time 7:833333330
+OSS: Receiving message from worker 1 PID 9997 at time 7:833333330
+OSS: Sending message to worker 2 PID 9993 at time 7:895833330
+OSS: Receiving message from worker 2 PID 9993 at time 7:895833330
+OSS: Sending message to worker 3 PID 9995 at time 7:958333330
+OSS: Receiving message from worker 3 PID 9995 at time 7:958333330
+OSS PID:9990 SysClockS: 8 SysclockNano: 20833330
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9996      3 562499997           17
+    1        1   9997      6 645833330            5
+    2        1   9993      2 125000000           24
+    3        1   9995      2 791666664           21
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 0 PID 9996 at time 8:20833330
+OSS: Receiving message from worker 0 PID 9996 at time 8:20833330
+OSS: Sending message to worker 1 PID 9997 at time 8:83333330
+OSS: Receiving message from worker 1 PID 9997 at time 8:83333330
+OSS: Sending message to worker 2 PID 9993 at time 8:145833330
+OSS: Receiving message from worker 2 PID 9993 at time 8:145833330
+OSS: Sending message to worker 3 PID 9995 at time 8:208333330
+OSS: Receiving message from worker 3 PID 9995 at time 8:208333330
+OSS: Sending message to worker 0 PID 9996 at time 8:270833330
+OSS: Receiving message from worker 0 PID 9996 at time 8:270833330
+OSS: Sending message to worker 1 PID 9997 at time 8:333333330
+OSS: Receiving message from worker 1 PID 9997 at time 8:333333330
+OSS: Sending message to worker 2 PID 9993 at time 8:395833330
+OSS: Receiving message from worker 2 PID 9993 at time 8:395833330
+OSS: Worker 2 PID 9993 is planning to terminate.
+OSS: Generating process with PID 9998 and putting it in process table at index 2 at time 8:479166663
+OSS PID:9990 SysClockS: 8 SysclockNano: 479166663
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9996      3 562499997           19
+    1        1   9997      6 645833330            7
+    2        1   9998      8 479166663            0
+    3        1   9995      2 791666664           22
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 3 PID 9995 at time 8:479166663
+OSS: Receiving message from worker 3 PID 9995 at time 8:479166663
+OSS PID:9990 SysClockS: 8 SysclockNano: 541666663
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9996      3 562499997           19
+    1        1   9997      6 645833330            7
+    2        1   9998      8 479166663            0
+    3        1   9995      2 791666664           23
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 0 PID 9996 at time 8:541666663
+OSS: Receiving message from worker 0 PID 9996 at time 8:541666663
+OSS: Sending message to worker 1 PID 9997 at time 8:604166663
+OSS: Receiving message from worker 1 PID 9997 at time 8:604166663
+OSS: Sending message to worker 2 PID 9998 at time 8:666666663
+OSS: Receiving message from worker 2 PID 9998 at time 8:666666663
+OSS: Sending message to worker 3 PID 9995 at time 8:729166663
+OSS: Receiving message from worker 3 PID 9995 at time 8:729166663
+OSS: Sending message to worker 0 PID 9996 at time 8:791666663
+OSS: Receiving message from worker 0 PID 9996 at time 8:791666663
+OSS: Sending message to worker 1 PID 9997 at time 8:854166663
+OSS: Receiving message from worker 1 PID 9997 at time 8:854166663
+OSS: Sending message to worker 2 PID 9998 at time 8:916666663
+OSS: Receiving message from worker 2 PID 9998 at time 8:916666663
+OSS: Sending message to worker 3 PID 9995 at time 8:979166663
+OSS: Receiving message from worker 3 PID 9995 at time 8:979166663
+OSS PID:9990 SysClockS: 9 SysclockNano: 41666663
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9996      3 562499997           21
+    1        1   9997      6 645833330            9
+    2        1   9998      8 479166663            2
+    3        1   9995      2 791666664           25
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 0 PID 9996 at time 9:41666663
+OSS: Receiving message from worker 0 PID 9996 at time 9:41666663
+OSS: Sending message to worker 1 PID 9997 at time 9:104166663
+OSS: Receiving message from worker 1 PID 9997 at time 9:104166663
+OSS: Sending message to worker 2 PID 9998 at time 9:166666663
+OSS: Receiving message from worker 2 PID 9998 at time 9:166666663
+OSS: Sending message to worker 3 PID 9995 at time 9:229166663
+OSS: Receiving message from worker 3 PID 9995 at time 9:229166663
+OSS: Sending message to worker 0 PID 9996 at time 9:291666663
+OSS: Receiving message from worker 0 PID 9996 at time 9:291666663
+OSS: Worker 0 PID 9996 is planning to terminate.
+OSS: Generating process with PID 9999 and putting it in process table at index 0 at time 9:374999996
+OSS PID:9990 SysClockS: 9 SysclockNano: 374999996
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9999      9 374999996            0
+    1        1   9997      6 645833330           10
+    2        1   9998      8 479166663            3
+    3        1   9995      2 791666664           26
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 1 PID 9997 at time 9:374999996
+OSS: Receiving message from worker 1 PID 9997 at time 9:374999996
+OSS: Worker 1 PID 9997 is planning to terminate.
+OSS: Sending message to worker 2 PID 9998 at time 9:458333329
+OSS: Receiving message from worker 2 PID 9998 at time 9:458333329
+OSS: Sending message to worker 3 PID 9995 at time 9:541666662
+OSS: Receiving message from worker 3 PID 9995 at time 9:541666662
+OSS PID:9990 SysClockS: 9 SysclockNano: 624999995
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9999      9 374999996            0
+    1        0   9997      6 645833330           11
+    2        1   9998      8 479166663            4
+    3        1   9995      2 791666664           27
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 0 PID 9999 at time 9:624999995
+OSS: Receiving message from worker 0 PID 9999 at time 9:624999995
+OSS: Sending message to worker 2 PID 9998 at time 9:708333328
+OSS: Receiving message from worker 2 PID 9998 at time 9:708333328
+OSS: Sending message to worker 3 PID 9995 at time 9:791666661
+OSS: Receiving message from worker 3 PID 9995 at time 9:791666661
+OSS: Sending message to worker 0 PID 9999 at time 9:874999994
+OSS: Receiving message from worker 0 PID 9999 at time 9:874999994
+OSS: Sending message to worker 2 PID 9998 at time 9:958333327
+OSS: Receiving message from worker 2 PID 9998 at time 9:958333327
+OSS PID:9990 SysClockS: 10 SysclockNano: 41666660
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9999      9 374999996            2
+    1        0   9997      6 645833330           11
+    2        1   9998      8 479166663            6
+    3        1   9995      2 791666664           28
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Generating process with PID 10000 and putting it in process table at index 1 at time 10:41666660
+OSS PID:9990 SysClockS: 10 SysclockNano: 41666660
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9999      9 374999996            2
+    1        1  10000     10 41666660            0
+    2        1   9998      8 479166663            6
+    3        1   9995      2 791666664           28
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 3 PID 9995 at time 10:41666660
+OSS: Receiving message from worker 3 PID 9995 at time 10:41666660
+OSS: Sending message to worker 0 PID 9999 at time 10:104166660
+OSS: Receiving message from worker 0 PID 9999 at time 10:104166660
+OSS: Sending message to worker 1 PID 10000 at time 10:166666660
+OSS: Receiving message from worker 1 PID 10000 at time 10:166666660
+OSS: Sending message to worker 2 PID 9998 at time 10:229166660
+OSS: Receiving message from worker 2 PID 9998 at time 10:229166660
+OSS: Sending message to worker 3 PID 9995 at time 10:291666660
+OSS: Receiving message from worker 3 PID 9995 at time 10:291666660
+OSS: Sending message to worker 0 PID 9999 at time 10:354166660
+OSS: Receiving message from worker 0 PID 9999 at time 10:354166660
+OSS: Sending message to worker 1 PID 10000 at time 10:416666660
+OSS: Receiving message from worker 1 PID 10000 at time 10:416666660
+OSS: Sending message to worker 2 PID 9998 at time 10:479166660
+OSS: Receiving message from worker 2 PID 9998 at time 10:479166660
+OSS PID:9990 SysClockS: 10 SysclockNano: 541666660
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9999      9 374999996            4
+    1        1  10000     10 41666660            2
+    2        1   9998      8 479166663            8
+    3        1   9995      2 791666664           30
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 3 PID 9995 at time 10:541666660
+OSS: Receiving message from worker 3 PID 9995 at time 10:541666660
+OSS: Sending message to worker 0 PID 9999 at time 10:604166660
+OSS: Receiving message from worker 0 PID 9999 at time 10:604166660
+OSS: Sending message to worker 1 PID 10000 at time 10:666666660
+OSS: Receiving message from worker 1 PID 10000 at time 10:666666660
+OSS: Sending message to worker 2 PID 9998 at time 10:729166660
+OSS: Receiving message from worker 2 PID 9998 at time 10:729166660
+OSS: Sending message to worker 3 PID 9995 at time 10:791666660
+OSS: Receiving message from worker 3 PID 9995 at time 10:791666660
+OSS: Sending message to worker 0 PID 9999 at time 10:854166660
+OSS: Receiving message from worker 0 PID 9999 at time 10:854166660
+OSS: Sending message to worker 1 PID 10000 at time 10:916666660
+OSS: Receiving message from worker 1 PID 10000 at time 10:916666660
+OSS: Sending message to worker 2 PID 9998 at time 10:979166660
+OSS: Receiving message from worker 2 PID 9998 at time 10:979166660
+OSS PID:9990 SysClockS: 11 SysclockNano: 41666660
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9999      9 374999996            6
+    1        1  10000     10 41666660            4
+    2        1   9998      8 479166663           10
+    3        1   9995      2 791666664           32
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 3 PID 9995 at time 11:41666660
+OSS: Receiving message from worker 3 PID 9995 at time 11:41666660
+OSS: Worker 3 PID 9995 is planning to terminate.
+OSS: Generating process with PID 10001 and putting it in process table at index 3 at time 11:124999993
+OSS PID:9990 SysClockS: 11 SysclockNano: 124999993
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9999      9 374999996            6
+    1        1  10000     10 41666660            4
+    2        1   9998      8 479166663           10
+    3        1  10001     11 124999993            0
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 0 PID 9999 at time 11:124999993
+OSS: Receiving message from worker 0 PID 9999 at time 11:124999993
+OSS: Sending message to worker 1 PID 10000 at time 11:187499993
+OSS: Receiving message from worker 1 PID 10000 at time 11:187499993
+OSS: Sending message to worker 2 PID 9998 at time 11:249999993
+OSS: Receiving message from worker 2 PID 9998 at time 11:249999993
+OSS: Sending message to worker 3 PID 10001 at time 11:312499993
+OSS: Receiving message from worker 3 PID 10001 at time 11:312499993
+OSS: Sending message to worker 0 PID 9999 at time 11:374999993
+OSS: Receiving message from worker 0 PID 9999 at time 11:374999993
+OSS: Sending message to worker 1 PID 10000 at time 11:437499993
+OSS: Receiving message from worker 1 PID 10000 at time 11:437499993
+OSS: Sending message to worker 2 PID 9998 at time 11:499999993
+OSS: Receiving message from worker 2 PID 9998 at time 11:499999993
+OSS PID:9990 SysClockS: 11 SysclockNano: 562499993
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        1   9999      9 374999996            8
+    1        1  10000     10 41666660            6
+    2        1   9998      8 479166663           12
+    3        1  10001     11 124999993            1
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 3 PID 10001 at time 11:562499993
+OSS: Receiving message from worker 3 PID 10001 at time 11:562499993
+OSS: Sending message to worker 0 PID 9999 at time 11:624999993
+OSS: Receiving message from worker 0 PID 9999 at time 11:624999993
+OSS: Sending message to worker 1 PID 10000 at time 11:687499993
+OSS: Receiving message from worker 1 PID 10000 at time 11:687499993
+OSS: Sending message to worker 2 PID 9998 at time 11:749999993
+OSS: Receiving message from worker 2 PID 9998 at time 11:749999993
+OSS: Sending message to worker 3 PID 10001 at time 11:812499993
+OSS: Receiving message from worker 3 PID 10001 at time 11:812499993
+OSS: Sending message to worker 0 PID 9999 at time 11:874999993
+OSS: Receiving message from worker 0 PID 9999 at time 11:874999993
+OSS: Worker 0 PID 9999 is planning to terminate.
+OSS: Sending message to worker 1 PID 10000 at time 11:958333326
+OSS: Receiving message from worker 1 PID 10000 at time 11:958333326
+OSS PID:9990 SysClockS: 12 SysclockNano: 41666659
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        0   9999      9 374999996           10
+    1        1  10000     10 41666660            8
+    2        1   9998      8 479166663           13
+    3        1  10001     11 124999993            3
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 2 PID 9998 at time 12:41666659
+OSS: Receiving message from worker 2 PID 9998 at time 12:41666659
+OSS: Sending message to worker 3 PID 10001 at time 12:124999992
+OSS: Receiving message from worker 3 PID 10001 at time 12:124999992
+OSS: Sending message to worker 1 PID 10000 at time 12:208333325
+OSS: Receiving message from worker 1 PID 10000 at time 12:208333325
+OSS: Sending message to worker 2 PID 9998 at time 12:291666658
+OSS: Receiving message from worker 2 PID 9998 at time 12:291666658
+OSS: Sending message to worker 3 PID 10001 at time 12:374999991
+OSS: Receiving message from worker 3 PID 10001 at time 12:374999991
+OSS: Sending message to worker 1 PID 10000 at time 12:458333324
+OSS: Receiving message from worker 1 PID 10000 at time 12:458333324
+OSS: Sending message to worker 2 PID 9998 at time 12:541666657
+OSS: Receiving message from worker 2 PID 9998 at time 12:541666657
+OSS PID:9990 SysClockS: 12 SysclockNano: 624999990
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        0   9999      9 374999996           10
+    1        1  10000     10 41666660           10
+    2        1   9998      8 479166663           16
+    3        1  10001     11 124999993            5
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 3 PID 10001 at time 12:624999990
+OSS: Receiving message from worker 3 PID 10001 at time 12:624999990
+OSS: Sending message to worker 1 PID 10000 at time 12:708333323
+OSS: Receiving message from worker 1 PID 10000 at time 12:708333323
+OSS: Sending message to worker 2 PID 9998 at time 12:791666656
+OSS: Receiving message from worker 2 PID 9998 at time 12:791666656
+OSS: Sending message to worker 3 PID 10001 at time 12:874999989
+OSS: Receiving message from worker 3 PID 10001 at time 12:874999989
+OSS: Sending message to worker 1 PID 10000 at time 12:958333322
+OSS: Receiving message from worker 1 PID 10000 at time 12:958333322
+OSS PID:9990 SysClockS: 13 SysclockNano: 41666655
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        0   9999      9 374999996           10
+    1        1  10000     10 41666660           12
+    2        1   9998      8 479166663           17
+    3        1  10001     11 124999993            7
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 2 PID 9998 at time 13:41666655
+OSS: Receiving message from worker 2 PID 9998 at time 13:41666655
+OSS: Sending message to worker 3 PID 10001 at time 13:124999988
+OSS: Receiving message from worker 3 PID 10001 at time 13:124999988
+OSS: Sending message to worker 1 PID 10000 at time 13:208333321
+OSS: Receiving message from worker 1 PID 10000 at time 13:208333321
+OSS: Sending message to worker 2 PID 9998 at time 13:291666654
+OSS: Receiving message from worker 2 PID 9998 at time 13:291666654
+OSS: Sending message to worker 3 PID 10001 at time 13:374999987
+OSS: Receiving message from worker 3 PID 10001 at time 13:374999987
+OSS: Sending message to worker 1 PID 10000 at time 13:458333320
+OSS: Receiving message from worker 1 PID 10000 at time 13:458333320
+OSS: Sending message to worker 2 PID 9998 at time 13:541666653
+OSS: Receiving message from worker 2 PID 9998 at time 13:541666653
+OSS: Worker 2 PID 9998 is planning to terminate.
+OSS PID:9990 SysClockS: 13 SysclockNano: 666666653
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        0   9999      9 374999996           10
+    1        1  10000     10 41666660           14
+    2        0   9998      8 479166663           20
+    3        1  10001     11 124999993            9
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 3 PID 10001 at time 13:666666653
+OSS: Receiving message from worker 3 PID 10001 at time 13:666666653
+OSS: Sending message to worker 1 PID 10000 at time 13:791666653
+OSS: Receiving message from worker 1 PID 10000 at time 13:791666653
+OSS: Sending message to worker 3 PID 10001 at time 13:916666653
+OSS: Receiving message from worker 3 PID 10001 at time 13:916666653
+OSS PID:9990 SysClockS: 14 SysclockNano: 41666653
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        0   9999      9 374999996           10
+    1        1  10000     10 41666660           15
+    2        0   9998      8 479166663           20
+    3        1  10001     11 124999993           11
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 1 PID 10000 at time 14:41666653
+OSS: Receiving message from worker 1 PID 10000 at time 14:41666653
+OSS: Sending message to worker 3 PID 10001 at time 14:166666653
+OSS: Receiving message from worker 3 PID 10001 at time 14:166666653
+OSS: Sending message to worker 1 PID 10000 at time 14:291666653
+OSS: Receiving message from worker 1 PID 10000 at time 14:291666653
+OSS: Sending message to worker 3 PID 10001 at time 14:416666653
+OSS: Receiving message from worker 3 PID 10001 at time 14:416666653
+OSS PID:9990 SysClockS: 14 SysclockNano: 541666653
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        0   9999      9 374999996           10
+    1        1  10000     10 41666660           17
+    2        0   9998      8 479166663           20
+    3        1  10001     11 124999993           13
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 1 PID 10000 at time 14:541666653
+OSS: Receiving message from worker 1 PID 10000 at time 14:541666653
+OSS: Sending message to worker 3 PID 10001 at time 14:666666653
+OSS: Receiving message from worker 3 PID 10001 at time 14:666666653
+OSS: Sending message to worker 1 PID 10000 at time 14:791666653
+OSS: Receiving message from worker 1 PID 10000 at time 14:791666653
+OSS: Sending message to worker 3 PID 10001 at time 14:916666653
+OSS: Receiving message from worker 3 PID 10001 at time 14:916666653
+OSS PID:9990 SysClockS: 15 SysclockNano: 41666653
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        0   9999      9 374999996           10
+    1        1  10000     10 41666660           19
+    2        0   9998      8 479166663           20
+    3        1  10001     11 124999993           15
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 1 PID 10000 at time 15:41666653
+OSS: Receiving message from worker 1 PID 10000 at time 15:41666653
+OSS: Sending message to worker 3 PID 10001 at time 15:166666653
+OSS: Receiving message from worker 3 PID 10001 at time 15:166666653
+OSS: Sending message to worker 1 PID 10000 at time 15:291666653
+OSS: Receiving message from worker 1 PID 10000 at time 15:291666653
+OSS: Sending message to worker 3 PID 10001 at time 15:416666653
+OSS: Receiving message from worker 3 PID 10001 at time 15:416666653
+OSS PID:9990 SysClockS: 15 SysclockNano: 541666653
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        0   9999      9 374999996           10
+    1        1  10000     10 41666660           21
+    2        0   9998      8 479166663           20
+    3        1  10001     11 124999993           17
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 1 PID 10000 at time 15:541666653
+OSS: Receiving message from worker 1 PID 10000 at time 15:541666653
+OSS: Sending message to worker 3 PID 10001 at time 15:666666653
+OSS: Receiving message from worker 3 PID 10001 at time 15:666666653
+OSS: Sending message to worker 1 PID 10000 at time 15:791666653
+OSS: Receiving message from worker 1 PID 10000 at time 15:791666653
+OSS: Sending message to worker 3 PID 10001 at time 15:916666653
+OSS: Receiving message from worker 3 PID 10001 at time 15:916666653
+OSS: Worker 3 PID 10001 is planning to terminate.
+OSS PID:9990 SysClockS: 16 SysclockNano: 166666653
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        0   9999      9 374999996           10
+    1        1  10000     10 41666660           23
+    2        0   9998      8 479166663           20
+    3        0  10001     11 124999993           19
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 1 PID 10000 at time 16:166666653
+OSS: Receiving message from worker 1 PID 10000 at time 16:166666653
+OSS: Sending message to worker 1 PID 10000 at time 16:416666653
+OSS: Receiving message from worker 1 PID 10000 at time 16:416666653
+OSS PID:9990 SysClockS: 16 SysclockNano: 666666653
+Process Table:
+Entry Occupied PID    StartS StartN MessagesSent
+    0        0   9999      9 374999996           10
+    1        1  10000     10 41666660           25
+    2        0   9998      8 479166663           20
+    3        0  10001     11 124999993           19
+    4        0      0      0      0            0
+    5        0      0      0      0            0
+    6        0      0      0      0            0
+    7        0      0      0      0            0
+    8        0      0      0      0            0
+    9        0      0      0      0            0
+   10        0      0      0      0            0
+   11        0      0      0      0            0
+   12        0      0      0      0            0
+   13        0      0      0      0            0
+   14        0      0      0      0            0
+   15        0      0      0      0            0
+   16        0      0      0      0            0
+   17        0      0      0      0            0
+   18        0      0      0      0            0
+   19        0      0      0      0            0
+
+OSS: Sending message to worker 1 PID 10000 at time 16:666666653
+OSS: Receiving message from worker 1 PID 10000 at time 16:666666653
+OSS: Worker 1 PID 10000 is planning to terminate.
+OSS PID:9990 Terminating
+10 workers were launched
+Total messages sent from OSS: 200

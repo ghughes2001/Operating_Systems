@@ -201,3 +201,215 @@ void launchWorker(int slot, double timeLimit, SimulatedClock* clock)
         perror("fork failed");
     }
 }
+
+int main(int argc, char* argv[]) 
+{
+    srand(time(nullptr));
+    
+    // defaults
+    int proc = 1;
+    int simul = 1;
+    double timeLimit = 1.0;
+    double interval = 0.2;
+    string logfileName = "log.txt";
+    
+    // parsing command line arguments
+    int opt;
+    while ((opt = getopt(argc, argv, "hn:s:t:i:f:")) != -1)
+    {
+        switch (opt) {
+            case 'h':
+                printUsage();
+                return 0;
+            case 'n':
+                proc = atoi(optarg);
+                break;
+            case 's':
+                simul = atoi(optarg);
+                break;
+            case 't':
+                timeLimit = atof(optarg);
+                break;
+            case 'i':
+                interval = atof(optarg);
+                break;
+            case 'f':
+                logfileName = optarg;
+                break;
+            default:
+                printUsage();
+                return 1;
+        }
+    }
+    // opening log file
+    logFile.open(logfileName);
+    if (!logFile.is_open())
+    {
+        cerr << "Failed to open log file: " << logfileName << endl;
+        return 1;
+    }
+    // signal handlers
+    signal(SIGALRM, signal_handler);
+    signal(SIGINT, signal_handler);
+    signal(SIGTERM, signal_handler);
+    alarm(60);
+    
+    // creating shared memory for clock
+    key_t key = ftok(".", 'c');
+    shmid = shmget(key, sizeof(SimulatedClock), IPC_CREAT | 0666);
+    if (shmid == -1)
+    {
+        perror("shmget failed");
+        return 1;
+    }
+    sharedClock = (SimulatedClock*)shmat(shmid, nullptr, 0);
+    if (sharedClock == (SimulatedClock*)-1)
+    {
+        perror("shmat failed");
+        return 1;
+    }
+    // initializing clock
+    sharedClock->seconds = 0;
+    sharedClock->nanoSeconds = 0;
+    
+    // creating the message queue
+    key_t msgkey = ftok(".", 'm');
+    msgid = msgget(msgkey, IPC_CREAT | 0666);
+    if (msgid == -1)
+    {
+        perror("msgget failed");
+        return 1;
+    }
+    // initializing process table
+    for (int i = 0; i < 20; i++)
+    {
+        processTable[i].occupied = 0;
+        processTable[i].pid = 0;
+        processTable[i].startSeconds = 0;
+        processTable[i].startNano = 0;
+        processTable[i].messagesSent = 0;
+    }
+    int processesLaunched = 0;
+    int activeProcesses = 0;
+    int lastOutputS = -1;
+    int lastOutputN = 0;
+    int lastLaunchS = 0;
+    int lastLaunchN = 0;
+    int totalMessagesSent = 0;
+    int currentChildIndex = 0;
+    
+    Message msg;
+    
+    while (processesLaunched < proc || activeProcesses > 0) {
+        // increment the clock
+        incrementClock(sharedClock, activeProcesses);
+        
+        // output process table every half second
+        if (sharedClock->seconds > lastOutputS ||
+            (sharedClock->seconds == lastOutputS && 
+             sharedClock->nanoSeconds - lastOutputN >= 500000000)) {
+            printProcessTable(sharedClock);
+            lastOutputS = sharedClock->seconds;
+            lastOutputN = sharedClock->nanoSeconds;
+        }
+        
+        // check for terminated children
+        int status;
+        pid_t terminatedPid = waitpid(-1, &status, WNOHANG);
+        if (terminatedPid > 0) {
+            for (int i = 0; i < 20; i++)
+            {
+                if (processTable[i].pid == terminatedPid)
+                {
+                    processTable[i].occupied = 0;
+                    processTable[i].pid = 0;
+                    activeProcesses--;
+                    break;
+                }
+            }
+        }
+        // launching new process if conditions are met
+        if (processesLaunched < proc && activeProcesses < simul)
+        {
+            if (isTimeToLaunch(sharedClock, lastLaunchS, lastLaunchN, interval)) 
+            {
+                int slot = findFreeSlot();
+                if (slot != -1) {
+                    launchWorker(slot, timeLimit, sharedClock);
+                    processesLaunched++;
+                    activeProcesses++;
+                    lastLaunchS = sharedClock->seconds;
+                    lastLaunchN = sharedClock->nanoSeconds;
+                }
+            }
+        }
+        // sending message to next child
+        if (activeProcesses > 0)
+        {
+            // finding next active child
+            int attempts = 0;
+            while (attempts < 20) {
+                if (processTable[currentChildIndex].occupied)
+                {
+                    pid_t targetPid = processTable[currentChildIndex].pid;
+                    
+                    // Send message
+                    msg.mtype = targetPid;
+                    msg.status = 1;
+                    
+                    ostringstream oss;
+                    oss << "OSS: Sending message to worker " << currentChildIndex 
+                        << " PID " << targetPid << " at time " 
+                        << sharedClock->seconds << ":" << sharedClock->nanoSeconds << endl;
+                    log_output(oss.str());
+                    
+                    if (msgsnd(msgid, &msg, sizeof(msg.status), 0) != -1)
+                    {
+                        processTable[currentChildIndex].messagesSent++;
+                        totalMessagesSent++;
+                        
+                        // Receive response
+                        if (msgrcv(msgid, &msg, sizeof(msg.status), getpid(), 0) != -1)
+                        {
+                            ostringstream oss2;
+                            oss2 << "OSS: Receiving message from worker " << currentChildIndex 
+                                 << " PID " << targetPid << " at time " 
+                                 << sharedClock->seconds << ":" << sharedClock->nanoSeconds << endl;
+                            log_output(oss2.str());
+                            
+                            if (msg.status == 0)
+                            {
+                                ostringstream oss3;
+                                oss3 << "OSS: Worker " << currentChildIndex << " PID " << targetPid 
+                                     << " is planning to terminate." << endl;
+                                log_output(oss3.str());
+                                wait(0);
+                                processTable[currentChildIndex].occupied = 0;
+                                activeProcesses--;
+                            }
+                        }
+                    }
+                    
+                    currentChildIndex = (currentChildIndex + 1) % 20;
+                    break;
+                }
+                currentChildIndex = (currentChildIndex + 1) % 20;
+                attempts++;
+            }
+        }
+    }
+    // output
+    ostringstream final;
+    final << "OSS PID:" << getpid() << " Terminating" << endl;
+    final << proc << " workers were launched" << endl;
+    final << "Total messages sent from OSS: " << totalMessagesSent << endl;
+    log_output(final.str());
+    
+    // cleanup
+    shmdt(sharedClock);
+    shmctl(shmid, IPC_RMID, nullptr);
+    msgctl(msgid, IPC_RMID, nullptr);
+    logFile.close();
+    
+    return 0;
+}

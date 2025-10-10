@@ -8,7 +8,7 @@ Example of how to run the project:
 Generative AI used: CHatGPT
 Prompts:
 Give code examples of message queues
-
+Showed code and output to ask for help figuring out why it would hang during runtime
 
 Git control: Github
 Link: (Project is the PROJECT_3) -> https://github.com/ghughes2001/Operating_Systems.git
