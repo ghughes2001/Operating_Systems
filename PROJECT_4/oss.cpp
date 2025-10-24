@@ -17,6 +17,7 @@ File: Main program
 #include <fstream>
 #include <vector>
 #include <algorithm>
+#include <climits>
 
 // Process Control Block structure
 struct PCB {
@@ -33,20 +34,20 @@ struct PCB {
     int totalBurstNano;     // total CPU burst time allocated
 };
 
-// shared memory structure
+// Shared memory structure
 struct SharedMemory {
     unsigned int clockSeconds;
     unsigned int clockNano;
     PCB processTable[20];
 };
 
-// message structure
+// Message structure for IPC
 struct Message {
     long mtype;       // message type (PID)
     int quantum;      // time quantum or time used
 };
 
-// global variables
+// global variables for cleanup
 int shmid = -1;
 int msgid = -1;
 SharedMemory* shm = nullptr;
@@ -68,8 +69,8 @@ void printProcessTable(SharedMemory* shm);
 
 int main(int argc, char* argv[]) {
     // defaults
-    int maxProc = 1;
-    int maxSimul = 1;
+    int maxProc = 5;
+    int maxSimul = 3;
     double timeLimit = 2.0;
     double launchInterval = 0.5;
     std::string logFileName = "log.txt";
@@ -101,7 +102,7 @@ int main(int argc, char* argv[]) {
                 return 1;
         }
     }
-    // log file
+    // open log file
     logFile.open(logFileName);
     if (!logFile.is_open()) {
         std::cerr << "Error opening log file\n";
@@ -124,13 +125,13 @@ int main(int argc, char* argv[]) {
         cleanupResources();
         return 1;
     }
-    // initializing shared memory
+    // initialize shared memory
     shm->clockSeconds = 0;
     shm->clockNano = 0;
     for (int i = 0; i < 20; i++) {
         shm->processTable[i].occupied = 0;
     }
-    // create message queue
+    // creating message queue
     key_t msgkey = ftok(".", 'M');
     msgid = msgget(msgkey, IPC_CREAT | 0666);
     if (msgid == -1) {
@@ -138,13 +139,14 @@ int main(int argc, char* argv[]) {
         cleanupResources();
         return 1;
     }
-    // statistics tracking
+    // tracking stats
     int totalProcesses = 0;
     int processesLaunched = 0;
     unsigned int nextLaunchSec = 0;
     unsigned int nextLaunchNano = 0;
     unsigned int lastTableOutputSec = 0;
     time_t startRealTime = time(nullptr);
+    
     double totalWaitTime = 0;
     double totalBlockedTime = 0;
     double totalCPUTime = 0;
@@ -155,18 +157,20 @@ int main(int argc, char* argv[]) {
     
     // scheduling loop
     while (processesLaunched < maxProc || totalProcesses > 0) {
+        // checking for timeout (3 real seconds)
         if (time(nullptr) - startRealTime > 3) {
             writeLog("OSS: Terminating due to timeout");
             break;
         }
-        
-        // seeing if we should launch a new process
+        // checking if we should launch a new process
         int activeProcesses = 0;
         for (int i = 0; i < 20; i++) {
             if (shm->processTable[i].occupied) activeProcesses++;
         }
-        
-        bool shouldLaunch = (processesLaunched < maxProc) && (activeProcesses < maxSimul) && (shm->clockSeconds > nextLaunchSec || (shm->clockSeconds == nextLaunchSec && shm->clockNano >= nextLaunchNano));
+        bool shouldLaunch = (processesLaunched < maxProc) && 
+                           (activeProcesses < maxSimul) &&
+                           (shm->clockSeconds > nextLaunchSec || 
+                            (shm->clockSeconds == nextLaunchSec && shm->clockNano >= nextLaunchNano));
         
         if (shouldLaunch) {
             int pcbIndex = findEmptyPCB(shm);
@@ -178,7 +182,7 @@ int main(int argc, char* argv[]) {
                     char timeLimitStr[20];
                     sprintf(indexStr, "%d", pcbIndex);
                     sprintf(timeLimitStr, "%.2f", timeLimit);
-                    execl("./user_proc", "user_proc", indexStr, timeLimitStr, nullptr);
+                    execl("./user", "user", indexStr, timeLimitStr, nullptr);
                     perror("execl");
                     exit(1);
                 } else if (pid > 0) {
@@ -194,7 +198,7 @@ int main(int argc, char* argv[]) {
                     pcb.eventWaitSec = 0;
                     pcb.eventWaitNano = 0;
                     
-                    // random total burst time
+                    // setting random total burst time (0 to timeLimit)
                     double randBurst = ((double)rand() / RAND_MAX) * timeLimit;
                     pcb.totalBurstSec = (int)randBurst;
                     pcb.totalBurstNano = (int)((randBurst - pcb.totalBurstSec) * 1e9);
@@ -214,17 +218,15 @@ int main(int argc, char* argv[]) {
                         nextLaunchSec++;
                         nextLaunchNano -= 1000000000;
                     }
-                    
-                    // increment clock for process creation overhead
+                    // incrementng clock for process creation overhead
                     incrementClock(shm->clockSeconds, shm->clockNano, 1000);
                 }
             }
         }
-        
-        // looking for blocked processes that should be unblocked
+        // checking for blocked processes that should be unblocked
         checkBlockedProcesses(shm);
         
-        // finding a ready process
+        // finding a ready process to schedule
         int selectedPCB = selectProcessToSchedule(shm);
         
         if (selectedPCB != -1) {
@@ -236,7 +238,7 @@ int main(int argc, char* argv[]) {
             unsigned int dispatchStartNano = shm->clockNano;
             unsigned int dispatchStartSec = shm->clockSeconds;
             
-            // dispatch
+            // D=dispatch process
             Message msg;
             msg.mtype = pcb.pid;
             msg.quantum = 10000000; // 10ms time quantum
@@ -245,7 +247,7 @@ int main(int argc, char* argv[]) {
                 perror("msgsnd");
                 break;
             }
-            // increment clock for dispatch overhead
+            // incrementing clock for dispatch overhead
             incrementClock(shm->clockSeconds, shm->clockNano, rand() % 1000 + 500);
             
             unsigned int dispatchTime = (shm->clockSeconds - dispatchStartSec) * 1000000000 + (shm->clockNano - dispatchStartNano);
@@ -266,13 +268,13 @@ int main(int argc, char* argv[]) {
             bool terminated = (response.quantum < 0);
             bool fullQuantum = (response.quantum == msg.quantum);
             
-            // updating service time
+            // update service time
             pcb.serviceTimeNano += timeUsed;
             if (pcb.serviceTimeNano >= 1000000000) {
                 pcb.serviceTimeSeconds++;
                 pcb.serviceTimeNano -= 1000000000;
             }
-            // incrementing clock
+            // increment clock
             incrementClock(shm->clockSeconds, shm->clockNano, timeUsed);
             totalCPUTime += timeUsed / 1e9;
             
@@ -283,7 +285,7 @@ int main(int argc, char* argv[]) {
                 sprintf(logMsg, "OSS: Process with PID %d has terminated", pcb.pid);
                 writeLog(logMsg);
                 
-                // wait time
+                // Calculate wait time
                 unsigned long long totalTime = (shm->clockSeconds - pcb.startSeconds) * 1000000000ULL + (shm->clockNano - pcb.startNano);
                 unsigned long long serviceTime = pcb.serviceTimeSeconds * 1000000000ULL + pcb.serviceTimeNano;
                 totalWaitTime += (totalTime - serviceTime) / 1e9;
@@ -296,7 +298,7 @@ int main(int argc, char* argv[]) {
                 sprintf(logMsg, "OSS: Putting process with PID %d into ready queue", pcb.pid);
                 writeLog(logMsg);
             } else {
-                // blocked
+                // process blocked
                 sprintf(logMsg, "OSS: not using its entire time quantum");
                 writeLog(logMsg);
                 sprintf(logMsg, "OSS: Putting process with PID %d into blocked queue", pcb.pid);
@@ -305,33 +307,58 @@ int main(int argc, char* argv[]) {
                 pcb.blocked = 1;
                 pcb.eventWaitNano = shm->clockNano + 600000000; // 0.6 seconds
                 pcb.eventWaitSec = shm->clockSeconds;
-
                 if (pcb.eventWaitNano >= 1000000000) {
                     pcb.eventWaitSec++;
                     pcb.eventWaitNano -= 1000000000;
                 }
+                
                 totalBlockedTime += 0.6;
                 incrementClock(shm->clockSeconds, shm->clockNano, 5000); // overhead
             }
         } else {
-            // no ready processes, incrementing clock
+            // no ready processes, increment clock
             if (totalProcesses > 0) {
-                incrementClock(shm->clockSeconds, shm->clockNano, 100000);
-                totalIdleTime += 0.0001;
+                // find the next unblock time
+                unsigned int nextEventSec = UINT_MAX;
+                unsigned int nextEventNano = UINT_MAX;
+                bool foundBlocked = false;
+                
+                for (int i = 0; i < 18; i++) {
+                    if (shm->processTable[i].occupied && shm->processTable[i].blocked) {
+                        foundBlocked = true;
+                        if (shm->processTable[i].eventWaitSec < nextEventSec ||
+                            (shm->processTable[i].eventWaitSec == nextEventSec && shm->processTable[i].eventWaitNano < nextEventNano)) {
+                            nextEventSec = shm->processTable[i].eventWaitSec;
+                            nextEventNano = shm->processTable[i].eventWaitNano;
+                        }
+                    }
+                }
+                if (foundBlocked) {
+                    // next unblock event
+                    unsigned long long oldTime = shm->clockSeconds * 1000000000ULL + shm->clockNano;
+                    unsigned long long newTime = nextEventSec * 1000000000ULL + nextEventNano;
+                    totalIdleTime += (newTime - oldTime) / 1e9;
+                    shm->clockSeconds = nextEventSec;
+                    shm->clockNano = nextEventNano;
+                } else {
+                    // no blocked processes, just increment
+                    incrementClock(shm->clockSeconds, shm->clockNano, 100000);
+                    totalIdleTime += 0.0001;
+                }
             } else if (processesLaunched < maxProc) {
                 // next launch time
                 shm->clockSeconds = nextLaunchSec;
                 shm->clockNano = nextLaunchNano;
             }
         }
-        // outpt process table every 0.5 seconds
+        // output the process table every 0.5 seconds
         if (shm->clockSeconds - lastTableOutputSec >= 1 || 
             (shm->clockSeconds == lastTableOutputSec && shm->clockNano >= 500000000)) {
             printProcessTable(shm);
             lastTableOutputSec = shm->clockSeconds;
         }
     }
-    // final statistics
+    // final sttats
     writeLog("\n========== FINAL STATISTICS ==========");
     char statMsg[256];
     sprintf(statMsg, "Total processes completed: %d", completedProcesses);
@@ -346,21 +373,22 @@ int main(int argc, char* argv[]) {
     writeLog(statMsg);
     sprintf(statMsg, "Simulation ended at time %u:%09u", shm->clockSeconds, shm->clockNano);
     writeLog(statMsg);
-
-    //cleaning
+    
+    // cleaning
     cleanupResources();
 
     return 0;
 }
 
-void signalHandler(int signum)
+void signalHandler(int signum) 
 {
     std::cout << "\nReceived signal " << signum << ", cleaning up...\n";
     cleanupResources();
+
     exit(0);
 }
 
-void setupSignalHandlers()
+void setupSignalHandlers() 
 {
     signal(SIGINT, signalHandler);
     signal(SIGTERM, signalHandler);
@@ -379,11 +407,11 @@ void cleanupResources()
         }
         shmdt(shm);
     }
-    // reomve shared memory
+    // removing shared memory
     if (shmid != -1) {
         shmctl(shmid, IPC_RMID, nullptr);
     }
-    // remove message queue
+    // removing message queue
     if (msgid != -1) {
         msgctl(msgid, IPC_RMID, nullptr);
     }
@@ -393,17 +421,16 @@ void cleanupResources()
     }
 }
 
-void incrementClock(unsigned int& sec, unsigned int& nano, int addNano) 
+void incrementClock(unsigned int& sec, unsigned int& nano, int addNano)
 {
     nano += addNano;
-
     if (nano >= 1000000000) {
         sec += nano / 1000000000;
         nano %= 1000000000;
     }
 }
 
-void writeLog(const std::string& message) 
+void writeLog(const std::string& message)
 {
     if (logLines < MAX_LOG_LINES && logFile.is_open()) {
         logFile << message << std::endl;
@@ -421,14 +448,12 @@ int findEmptyPCB(SharedMemory* shm)
     return -1;
 }
 
-double calculatePriority(const PCB& pcb, unsigned int clockSec, unsigned int clockNano)
+double calculatePriority(const PCB& pcb, unsigned int clockSec, unsigned int clockNano) 
 {
     unsigned long long totalTime = (clockSec - pcb.startSeconds) * 1000000000ULL + (clockNano - pcb.startNano);
     unsigned long long serviceTime = pcb.serviceTimeSeconds * 1000000000ULL + pcb.serviceTimeNano;
     
-    if (totalTime == 0) {
-        return 0.0;
-    }
+    if (totalTime == 0) return 0.0;
     return (double)serviceTime / (double)totalTime;
 }
 

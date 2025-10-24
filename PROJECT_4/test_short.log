@@ -1,0 +1,832 @@
+OSS: Starting simulation
+OSS: Generating process with PID 25748 and putting it in ready queue at time 0:000000000
+OSS: Dispatching process with PID 25748 priority 0.00 from ready queue at time 0:000001749
+OSS: total time this dispatch was 749 nanoseconds
+OSS: Receiving that process with PID 25748 ran for 3913 nanoseconds
+OSS: Process with PID 25748 has terminated
+OSS: Generating process with PID 25749 and putting it in ready queue at time 0:200000000
+OSS: Dispatching process with PID 25749 priority 0.00 from ready queue at time 0:200002158
+OSS: total time this dispatch was 1158 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 5557760 nanoseconds
+OSS: not using its entire time quantum
+OSS: Putting process with PID 25749 into blocked queue
+
+========== PROCESS TABLE ==========
+Current time: 0:805559918
+PCB[0]: PID=25749 Priority=0.0092 Service=0:005557760 Blocked=1
+===================================
+
+OSS: Generating process with PID 25750 and putting it in ready queue at time 0:805559918
+OSS: Process with PID 25749 unblocked at time 0:805560918
+OSS: Dispatching process with PID 25750 priority 0.00 from ready queue at time 0:805564690
+OSS: total time this dispatch was 772 nanoseconds
+OSS: Receiving that process with PID 25750 ran for 549362 nanoseconds
+OSS: not using its entire time quantum
+OSS: Putting process with PID 25750 into blocked queue
+
+========== PROCESS TABLE ==========
+Current time: 0:806119052
+PCB[0]: PID=25749 Priority=0.0092 Service=0:005557760 Blocked=0
+PCB[1]: PID=25750 Priority=0.9825 Service=0:000549362 Blocked=1
+===================================
+
+OSS: Dispatching process with PID 25749 priority 0.01 from ready queue at time 0:806120096
+OSS: total time this dispatch was 1044 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 9862420 nanoseconds
+OSS: not using its entire time quantum
+OSS: Putting process with PID 25749 into blocked queue
+
+========== PROCESS TABLE ==========
+Current time: 0:815987516
+PCB[0]: PID=25749 Priority=0.0250 Service=0:015420180 Blocked=1
+PCB[1]: PID=25750 Priority=0.0527 Service=0:000549362 Blocked=1
+===================================
+
+
+========== PROCESS TABLE ==========
+Current time: 1:406114052
+PCB[0]: PID=25749 Priority=0.0128 Service=0:015420180 Blocked=1
+PCB[1]: PID=25750 Priority=0.0001 Service=0:000549362 Blocked=1
+===================================
+
+OSS: Process with PID 25750 unblocked at time 1:406114052
+OSS: Dispatching process with PID 25750 priority 0.00 from ready queue at time 1:406118430
+OSS: total time this dispatch was 1378 nanoseconds
+OSS: Receiving that process with PID 25750 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25750 into ready queue
+OSS: Process with PID 25749 unblocked at time 1:416118430
+OSS: Dispatching process with PID 25750 priority 0.00 from ready queue at time 1:416122853
+OSS: total time this dispatch was 1423 nanoseconds
+OSS: Receiving that process with PID 25750 ran for 4277955 nanoseconds
+OSS: not using its entire time quantum
+OSS: Putting process with PID 25750 into blocked queue
+OSS: Dispatching process with PID 25749 priority 0.01 from ready queue at time 1:420407017
+OSS: total time this dispatch was 1209 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 4724590 nanoseconds
+OSS: not using its entire time quantum
+OSS: Putting process with PID 25749 into blocked queue
+
+========== PROCESS TABLE ==========
+Current time: 2:020400808
+PCB[0]: PID=25749 Priority=0.0033 Service=0:020144770 Blocked=1
+PCB[1]: PID=25750 Priority=0.0027 Service=0:014827317 Blocked=1
+===================================
+
+OSS: Process with PID 25750 unblocked at time 2:020400808
+OSS: Dispatching process with PID 25750 priority 0.00 from ready queue at time 2:020404748
+OSS: total time this dispatch was 940 nanoseconds
+OSS: Receiving that process with PID 25750 ran for 6561484 nanoseconds
+OSS: not using its entire time quantum
+OSS: Putting process with PID 25750 into blocked queue
+OSS: Process with PID 25749 unblocked at time 2:026971232
+OSS: Dispatching process with PID 25749 priority 0.00 from ready queue at time 2:026974897
+OSS: total time this dispatch was 665 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25749 into ready queue
+OSS: Dispatching process with PID 25749 priority 0.00 from ready queue at time 2:036975889
+OSS: total time this dispatch was 992 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 6269651 nanoseconds
+OSS: not using its entire time quantum
+OSS: Putting process with PID 25749 into blocked queue
+
+========== PROCESS TABLE ==========
+Current time: 2:626966232
+PCB[0]: PID=25749 Priority=0.0150 Service=0:036414421 Blocked=1
+PCB[1]: PID=25750 Priority=0.0035 Service=0:021388801 Blocked=1
+===================================
+
+OSS: Process with PID 25750 unblocked at time 2:626966232
+OSS: Dispatching process with PID 25750 priority 0.00 from ready queue at time 2:626969774
+OSS: total time this dispatch was 542 nanoseconds
+OSS: Receiving that process with PID 25750 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25750 into ready queue
+
+========== PROCESS TABLE ==========
+Current time: 2:636969774
+PCB[0]: PID=25749 Priority=0.0149 Service=0:036414421 Blocked=1
+PCB[1]: PID=25750 Priority=0.0051 Service=0:031388801 Blocked=0
+===================================
+
+OSS: Dispatching process with PID 25750 priority 0.01 from ready queue at time 2:636971261
+OSS: total time this dispatch was 1487 nanoseconds
+OSS: Receiving that process with PID 25750 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25750 into ready queue
+
+========== PROCESS TABLE ==========
+Current time: 2:646971261
+PCB[0]: PID=25749 Priority=0.0149 Service=0:036414421 Blocked=1
+PCB[1]: PID=25750 Priority=0.0067 Service=0:041388801 Blocked=0
+===================================
+
+OSS: Process with PID 25749 unblocked at time 2:646971261
+OSS: Dispatching process with PID 25750 priority 0.01 from ready queue at time 2:646975264
+OSS: total time this dispatch was 1003 nanoseconds
+OSS: Receiving that process with PID 25750 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25750 into ready queue
+
+========== PROCESS TABLE ==========
+Current time: 2:656975264
+PCB[0]: PID=25749 Priority=0.0148 Service=0:036414421 Blocked=0
+PCB[1]: PID=25750 Priority=0.0084 Service=0:051388801 Blocked=0
+===================================
+
+OSS: Dispatching process with PID 25750 priority 0.01 from ready queue at time 2:656976091
+OSS: total time this dispatch was 827 nanoseconds
+OSS: Receiving that process with PID 25750 ran for 6453773 nanoseconds
+OSS: not using its entire time quantum
+OSS: Putting process with PID 25750 into blocked queue
+
+========== PROCESS TABLE ==========
+Current time: 2:663434864
+PCB[0]: PID=25749 Priority=0.0148 Service=0:036414421 Blocked=0
+PCB[1]: PID=25750 Priority=0.0094 Service=0:057842574 Blocked=1
+===================================
+
+OSS: Dispatching process with PID 25749 priority 0.01 from ready queue at time 2:663436093
+OSS: total time this dispatch was 1229 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25749 into ready queue
+
+========== PROCESS TABLE ==========
+Current time: 2:673436093
+PCB[0]: PID=25749 Priority=0.0188 Service=0:046414421 Blocked=0
+PCB[1]: PID=25750 Priority=0.0094 Service=0:057842574 Blocked=1
+===================================
+
+OSS: Dispatching process with PID 25749 priority 0.02 from ready queue at time 2:673437433
+OSS: total time this dispatch was 1340 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25749 into ready queue
+
+========== PROCESS TABLE ==========
+Current time: 2:683437433
+PCB[0]: PID=25749 Priority=0.0227 Service=0:056414421 Blocked=0
+PCB[1]: PID=25750 Priority=0.0094 Service=0:057842574 Blocked=1
+===================================
+
+OSS: Dispatching process with PID 25749 priority 0.02 from ready queue at time 2:683438545
+OSS: total time this dispatch was 1112 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25749 into ready queue
+
+========== PROCESS TABLE ==========
+Current time: 2:693438545
+PCB[0]: PID=25749 Priority=0.0266 Service=0:066414421 Blocked=0
+PCB[1]: PID=25750 Priority=0.0094 Service=0:057842574 Blocked=1
+===================================
+
+OSS: Dispatching process with PID 25749 priority 0.03 from ready queue at time 2:693439348
+OSS: total time this dispatch was 803 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25749 into ready queue
+
+========== PROCESS TABLE ==========
+Current time: 2:703439348
+PCB[0]: PID=25749 Priority=0.0305 Service=0:076414421 Blocked=0
+PCB[1]: PID=25750 Priority=0.0093 Service=0:057842574 Blocked=1
+===================================
+
+OSS: Dispatching process with PID 25749 priority 0.03 from ready queue at time 2:703440017
+OSS: total time this dispatch was 669 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 3358992 nanoseconds
+OSS: not using its entire time quantum
+OSS: Putting process with PID 25749 into blocked queue
+
+========== PROCESS TABLE ==========
+Current time: 2:706804009
+PCB[0]: PID=25749 Priority=0.0318 Service=0:079773413 Blocked=1
+PCB[1]: PID=25750 Priority=0.0093 Service=0:057842574 Blocked=1
+===================================
+
+
+========== PROCESS TABLE ==========
+Current time: 3:263429864
+PCB[0]: PID=25749 Priority=0.0260 Service=0:079773413 Blocked=1
+PCB[1]: PID=25750 Priority=0.0086 Service=0:057842574 Blocked=1
+===================================
+
+OSS: Process with PID 25750 unblocked at time 3:263429864
+OSS: Dispatching process with PID 25750 priority 0.01 from ready queue at time 3:263434073
+OSS: total time this dispatch was 1209 nanoseconds
+OSS: Receiving that process with PID 25750 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25750 into ready queue
+OSS: Dispatching process with PID 25750 priority 0.01 from ready queue at time 3:273434730
+OSS: total time this dispatch was 657 nanoseconds
+OSS: Receiving that process with PID 25750 ran for 8166979 nanoseconds
+OSS: not using its entire time quantum
+OSS: Putting process with PID 25750 into blocked queue
+OSS: Process with PID 25749 unblocked at time 3:306799009
+OSS: Dispatching process with PID 25749 priority 0.03 from ready queue at time 3:306803069
+OSS: total time this dispatch was 1060 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 3734117 nanoseconds
+OSS: not using its entire time quantum
+OSS: Putting process with PID 25749 into blocked queue
+
+========== PROCESS TABLE ==========
+Current time: 3:881601709
+PCB[0]: PID=25749 Priority=0.0227 Service=0:083507530 Blocked=1
+PCB[1]: PID=25750 Priority=0.0247 Service=0:076009553 Blocked=1
+===================================
+
+OSS: Process with PID 25750 unblocked at time 3:881601709
+OSS: Dispatching process with PID 25750 priority 0.02 from ready queue at time 3:881606142
+OSS: total time this dispatch was 1433 nanoseconds
+OSS: Receiving that process with PID 25750 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25750 into ready queue
+
+========== PROCESS TABLE ==========
+Current time: 3:891606142
+PCB[0]: PID=25749 Priority=0.0226 Service=0:083507530 Blocked=1
+PCB[1]: PID=25750 Priority=0.0279 Service=0:086009553 Blocked=0
+===================================
+
+OSS: Dispatching process with PID 25750 priority 0.03 from ready queue at time 3:891606741
+OSS: total time this dispatch was 599 nanoseconds
+OSS: Receiving that process with PID 25750 ran for 259645 nanoseconds
+OSS: not using its entire time quantum
+OSS: Putting process with PID 25750 into blocked queue
+
+========== PROCESS TABLE ==========
+Current time: 3:891871386
+PCB[0]: PID=25749 Priority=0.0226 Service=0:083507530 Blocked=1
+PCB[1]: PID=25750 Priority=0.0280 Service=0:086269198 Blocked=1
+===================================
+
+
+========== PROCESS TABLE ==========
+Current time: 3:910537186
+PCB[0]: PID=25749 Priority=0.0225 Service=0:083507530 Blocked=1
+PCB[1]: PID=25750 Priority=0.0278 Service=0:086269198 Blocked=1
+===================================
+
+OSS: Process with PID 25749 unblocked at time 3:910537186
+OSS: Dispatching process with PID 25749 priority 0.02 from ready queue at time 3:910540964
+OSS: total time this dispatch was 778 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 3187977 nanoseconds
+OSS: not using its entire time quantum
+OSS: Putting process with PID 25749 into blocked queue
+
+========== PROCESS TABLE ==========
+Current time: 3:913733941
+PCB[0]: PID=25749 Priority=0.0233 Service=0:086695507 Blocked=1
+PCB[1]: PID=25750 Priority=0.0278 Service=0:086269198 Blocked=1
+===================================
+
+
+========== PROCESS TABLE ==========
+Current time: 4:491866386
+PCB[0]: PID=25749 Priority=0.0202 Service=0:086695507 Blocked=1
+PCB[1]: PID=25750 Priority=0.0108 Service=0:086269198 Blocked=1
+===================================
+
+OSS: Process with PID 25750 unblocked at time 4:491866386
+OSS: Dispatching process with PID 25750 priority 0.01 from ready queue at time 4:491870702
+OSS: total time this dispatch was 1316 nanoseconds
+OSS: Receiving that process with PID 25750 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25750 into ready queue
+
+========== PROCESS TABLE ==========
+Current time: 4:501870702
+PCB[0]: PID=25749 Priority=0.0202 Service=0:086695507 Blocked=1
+PCB[1]: PID=25750 Priority=0.0120 Service=0:096269198 Blocked=0
+===================================
+
+OSS: Dispatching process with PID 25750 priority 0.01 from ready queue at time 4:501871537
+OSS: total time this dispatch was 835 nanoseconds
+OSS: Receiving that process with PID 25750 ran for 6597001 nanoseconds
+OSS: not using its entire time quantum
+OSS: Putting process with PID 25750 into blocked queue
+
+========== PROCESS TABLE ==========
+Current time: 4:508473538
+PCB[0]: PID=25749 Priority=0.0201 Service=0:086695507 Blocked=1
+PCB[1]: PID=25750 Priority=0.0129 Service=0:102866199 Blocked=1
+===================================
+
+
+========== PROCESS TABLE ==========
+Current time: 4:513728941
+PCB[0]: PID=25749 Priority=0.0201 Service=0:086695507 Blocked=1
+PCB[1]: PID=25750 Priority=0.0129 Service=0:102866199 Blocked=1
+===================================
+
+OSS: Process with PID 25749 unblocked at time 4:513728941
+OSS: Dispatching process with PID 25749 priority 0.02 from ready queue at time 4:513732538
+OSS: total time this dispatch was 597 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 7536345 nanoseconds
+OSS: not using its entire time quantum
+OSS: Putting process with PID 25749 into blocked queue
+
+========== PROCESS TABLE ==========
+Current time: 4:521273883
+PCB[0]: PID=25749 Priority=0.0218 Service=0:094231852 Blocked=1
+PCB[1]: PID=25750 Priority=0.0128 Service=0:102866199 Blocked=1
+===================================
+
+
+========== PROCESS TABLE ==========
+Current time: 5:108468538
+PCB[0]: PID=25749 Priority=0.0102 Service=0:094231852 Blocked=1
+PCB[1]: PID=25750 Priority=0.0120 Service=0:102866199 Blocked=1
+===================================
+
+OSS: Process with PID 25750 unblocked at time 5:108468538
+OSS: Dispatching process with PID 25750 priority 0.01 from ready queue at time 5:108472864
+OSS: total time this dispatch was 1326 nanoseconds
+OSS: Receiving that process with PID 25750 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25750 into ready queue
+OSS: Dispatching process with PID 25750 priority 0.01 from ready queue at time 5:118473876
+OSS: total time this dispatch was 1012 nanoseconds
+OSS: Receiving that process with PID 25750 ran for 8577925 nanoseconds
+OSS: not using its entire time quantum
+OSS: Putting process with PID 25750 into blocked queue
+OSS: Process with PID 25749 unblocked at time 5:127056801
+OSS: Dispatching process with PID 25749 priority 0.01 from ready queue at time 5:127060568
+OSS: total time this dispatch was 767 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25749 into ready queue
+OSS: Dispatching process with PID 25749 priority 0.01 from ready queue at time 5:137061878
+OSS: total time this dispatch was 1310 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25749 into ready queue
+OSS: Dispatching process with PID 25749 priority 0.01 from ready queue at time 5:147063011
+OSS: total time this dispatch was 1133 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25749 into ready queue
+OSS: Dispatching process with PID 25749 priority 0.01 from ready queue at time 5:157064490
+OSS: total time this dispatch was 1479 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25749 into ready queue
+OSS: Dispatching process with PID 25749 priority 0.01 from ready queue at time 5:167065139
+OSS: total time this dispatch was 649 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25749 into ready queue
+OSS: Dispatching process with PID 25749 priority 0.02 from ready queue at time 5:177066218
+OSS: total time this dispatch was 1079 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 713684 nanoseconds
+OSS: not using its entire time quantum
+OSS: Putting process with PID 25749 into blocked queue
+
+========== PROCESS TABLE ==========
+Current time: 5:727051801
+PCB[0]: PID=25749 Priority=0.0262 Service=0:144945536 Blocked=1
+PCB[1]: PID=25750 Priority=0.0132 Service=0:121444124 Blocked=1
+===================================
+
+OSS: Process with PID 25750 unblocked at time 5:727051801
+OSS: Dispatching process with PID 25750 priority 0.01 from ready queue at time 5:727056122
+OSS: total time this dispatch was 1321 nanoseconds
+OSS: Receiving that process with PID 25750 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25750 into ready queue
+
+========== PROCESS TABLE ==========
+Current time: 5:737056122
+PCB[0]: PID=25749 Priority=0.0262 Service=0:144945536 Blocked=1
+PCB[1]: PID=25750 Priority=0.0142 Service=0:131444124 Blocked=0
+===================================
+
+OSS: Dispatching process with PID 25750 priority 0.01 from ready queue at time 5:737057589
+OSS: total time this dispatch was 1467 nanoseconds
+OSS: Receiving that process with PID 25750 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25750 into ready queue
+
+========== PROCESS TABLE ==========
+Current time: 5:747057589
+PCB[0]: PID=25749 Priority=0.0261 Service=0:144945536 Blocked=1
+PCB[1]: PID=25750 Priority=0.0153 Service=0:141444124 Blocked=0
+===================================
+
+OSS: Dispatching process with PID 25750 priority 0.02 from ready queue at time 5:747058761
+OSS: total time this dispatch was 1172 nanoseconds
+OSS: Receiving that process with PID 25750 ran for 7510315 nanoseconds
+OSS: not using its entire time quantum
+OSS: Putting process with PID 25750 into blocked queue
+
+========== PROCESS TABLE ==========
+Current time: 5:754574076
+PCB[0]: PID=25749 Priority=0.0261 Service=0:144945536 Blocked=1
+PCB[1]: PID=25750 Priority=0.0161 Service=0:148954439 Blocked=1
+===================================
+
+
+========== PROCESS TABLE ==========
+Current time: 5:777779902
+PCB[0]: PID=25749 Priority=0.0260 Service=0:144945536 Blocked=1
+PCB[1]: PID=25750 Priority=0.0161 Service=0:148954439 Blocked=1
+===================================
+
+OSS: Process with PID 25749 unblocked at time 5:777779902
+OSS: Dispatching process with PID 25749 priority 0.03 from ready queue at time 5:777783795
+OSS: total time this dispatch was 893 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25749 into ready queue
+
+========== PROCESS TABLE ==========
+Current time: 5:787783795
+PCB[0]: PID=25749 Priority=0.0277 Service=0:154945536 Blocked=0
+PCB[1]: PID=25750 Priority=0.0161 Service=0:148954439 Blocked=1
+===================================
+
+OSS: Dispatching process with PID 25749 priority 0.03 from ready queue at time 5:787784631
+OSS: total time this dispatch was 836 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25749 into ready queue
+
+========== PROCESS TABLE ==========
+Current time: 5:797784631
+PCB[0]: PID=25749 Priority=0.0295 Service=0:164945536 Blocked=0
+PCB[1]: PID=25750 Priority=0.0160 Service=0:148954439 Blocked=1
+===================================
+
+OSS: Dispatching process with PID 25749 priority 0.03 from ready queue at time 5:797785616
+OSS: total time this dispatch was 985 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25749 into ready queue
+
+========== PROCESS TABLE ==========
+Current time: 5:807785616
+PCB[0]: PID=25749 Priority=0.0312 Service=0:174945536 Blocked=0
+PCB[1]: PID=25750 Priority=0.0298 Service=0:148954439 Blocked=1
+===================================
+
+OSS: Dispatching process with PID 25749 priority 0.03 from ready queue at time 5:807786861
+OSS: total time this dispatch was 1245 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25749 into ready queue
+
+========== PROCESS TABLE ==========
+Current time: 5:817786861
+PCB[0]: PID=25749 Priority=0.0329 Service=0:184945536 Blocked=0
+PCB[1]: PID=25750 Priority=0.0297 Service=0:148954439 Blocked=1
+===================================
+
+OSS: Dispatching process with PID 25749 priority 0.03 from ready queue at time 5:817787589
+OSS: total time this dispatch was 728 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25749 into ready queue
+
+========== PROCESS TABLE ==========
+Current time: 5:827787589
+PCB[0]: PID=25749 Priority=0.0346 Service=0:194945536 Blocked=0
+PCB[1]: PID=25750 Priority=0.0297 Service=0:148954439 Blocked=1
+===================================
+
+OSS: Dispatching process with PID 25749 priority 0.03 from ready queue at time 5:827788180
+OSS: total time this dispatch was 591 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 9822100 nanoseconds
+OSS: not using its entire time quantum
+OSS: Putting process with PID 25749 into blocked queue
+
+========== PROCESS TABLE ==========
+Current time: 5:837615280
+PCB[0]: PID=25749 Priority=0.0363 Service=0:204767636 Blocked=1
+PCB[1]: PID=25750 Priority=0.0296 Service=0:148954439 Blocked=1
+===================================
+
+
+========== PROCESS TABLE ==========
+Current time: 6:354569076
+PCB[0]: PID=25749 Priority=0.0333 Service=0:204767636 Blocked=1
+PCB[1]: PID=25750 Priority=0.0151 Service=0:148954439 Blocked=1
+===================================
+
+OSS: Process with PID 25750 unblocked at time 6:354569076
+OSS: Dispatching process with PID 25750 priority 0.02 from ready queue at time 6:354572770
+OSS: total time this dispatch was 694 nanoseconds
+OSS: Receiving that process with PID 25750 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25750 into ready queue
+OSS: Dispatching process with PID 25750 priority 0.02 from ready queue at time 6:364573627
+OSS: total time this dispatch was 857 nanoseconds
+OSS: Receiving that process with PID 25750 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25750 into ready queue
+OSS: Dispatching process with PID 25750 priority 0.02 from ready queue at time 6:374574128
+OSS: total time this dispatch was 501 nanoseconds
+OSS: Receiving that process with PID 25750 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25750 into ready queue
+OSS: Dispatching process with PID 25750 priority 0.02 from ready queue at time 6:384574781
+OSS: total time this dispatch was 653 nanoseconds
+OSS: Receiving that process with PID 25750 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25750 into ready queue
+OSS: Dispatching process with PID 25750 priority 0.02 from ready queue at time 6:394575989
+OSS: total time this dispatch was 1208 nanoseconds
+OSS: Receiving that process with PID 25750 ran for 3608617 nanoseconds
+OSS: not using its entire time quantum
+OSS: Putting process with PID 25750 into blocked queue
+OSS: Process with PID 25749 unblocked at time 6:437610280
+OSS: Dispatching process with PID 25749 priority 0.03 from ready queue at time 6:437614724
+OSS: total time this dispatch was 1444 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25749 into ready queue
+OSS: Dispatching process with PID 25749 priority 0.03 from ready queue at time 6:447615892
+OSS: total time this dispatch was 1168 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25749 into ready queue
+OSS: Dispatching process with PID 25749 priority 0.04 from ready queue at time 6:457616882
+OSS: total time this dispatch was 990 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25749 into ready queue
+OSS: Dispatching process with PID 25749 priority 0.04 from ready queue at time 6:467617506
+OSS: total time this dispatch was 624 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 6414601 nanoseconds
+OSS: not using its entire time quantum
+OSS: Putting process with PID 25749 into blocked queue
+
+========== PROCESS TABLE ==========
+Current time: 6:998184606
+PCB[0]: PID=25749 Priority=0.0355 Service=0:241182237 Blocked=1
+PCB[1]: PID=25750 Priority=0.0311 Service=0:192563056 Blocked=1
+===================================
+
+OSS: Process with PID 25750 unblocked at time 6:998184606
+OSS: Dispatching process with PID 25750 priority 0.03 from ready queue at time 6:998188302
+OSS: total time this dispatch was 696 nanoseconds
+OSS: Receiving that process with PID 25750 ran for 7265307 nanoseconds
+OSS: not using its entire time quantum
+OSS: Putting process with PID 25750 into blocked queue
+
+========== PROCESS TABLE ==========
+Current time: 7:005458609
+PCB[0]: PID=25749 Priority=0.0217 Service=0:241182237 Blocked=1
+PCB[1]: PID=25750 Priority=0.0190 Service=0:199828363 Blocked=1
+===================================
+
+OSS: Process with PID 25749 unblocked at time 7:074032107
+OSS: Dispatching process with PID 25749 priority 0.02 from ready queue at time 7:074036137
+OSS: total time this dispatch was 1030 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 6007876 nanoseconds
+OSS: not using its entire time quantum
+OSS: Putting process with PID 25749 into blocked queue
+
+========== PROCESS TABLE ==========
+Current time: 7:605453609
+PCB[0]: PID=25749 Priority=0.0334 Service=0:247190113 Blocked=1
+PCB[1]: PID=25750 Priority=0.0180 Service=0:199828363 Blocked=1
+===================================
+
+OSS: Process with PID 25750 unblocked at time 7:605453609
+OSS: Dispatching process with PID 25750 priority 0.02 from ready queue at time 7:605458012
+OSS: total time this dispatch was 1403 nanoseconds
+OSS: Receiving that process with PID 25750 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25750 into ready queue
+
+========== PROCESS TABLE ==========
+Current time: 7:615458012
+PCB[0]: PID=25749 Priority=0.0333 Service=0:247190113 Blocked=1
+PCB[1]: PID=25750 Priority=0.0189 Service=0:209828363 Blocked=0
+===================================
+
+OSS: Dispatching process with PID 25750 priority 0.02 from ready queue at time 7:615459234
+OSS: total time this dispatch was 1222 nanoseconds
+OSS: Receiving that process with PID 25750 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25750 into ready queue
+
+========== PROCESS TABLE ==========
+Current time: 7:625459234
+PCB[0]: PID=25749 Priority=0.0333 Service=0:247190113 Blocked=1
+PCB[1]: PID=25750 Priority=0.0198 Service=0:219828363 Blocked=0
+===================================
+
+OSS: Dispatching process with PID 25750 priority 0.02 from ready queue at time 7:625460400
+OSS: total time this dispatch was 1166 nanoseconds
+OSS: Receiving that process with PID 25750 ran for 973422 nanoseconds
+OSS: not using its entire time quantum
+OSS: Putting process with PID 25750 into blocked queue
+
+========== PROCESS TABLE ==========
+Current time: 7:626438822
+PCB[0]: PID=25749 Priority=0.0333 Service=0:247190113 Blocked=1
+PCB[1]: PID=25750 Priority=0.0199 Service=0:220801785 Blocked=1
+===================================
+
+
+========== PROCESS TABLE ==========
+Current time: 7:680044013
+PCB[0]: PID=25749 Priority=0.0330 Service=0:247190113 Blocked=1
+PCB[1]: PID=25750 Priority=0.0198 Service=0:220801785 Blocked=1
+===================================
+
+OSS: Process with PID 25749 unblocked at time 7:680044013
+OSS: Dispatching process with PID 25749 priority 0.03 from ready queue at time 7:680048062
+OSS: total time this dispatch was 1049 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25749 into ready queue
+
+========== PROCESS TABLE ==========
+Current time: 7:690048062
+PCB[0]: PID=25749 Priority=0.0343 Service=0:257190113 Blocked=0
+PCB[1]: PID=25750 Priority=0.0198 Service=0:220801785 Blocked=1
+===================================
+
+OSS: Dispatching process with PID 25749 priority 0.03 from ready queue at time 7:690048586
+OSS: total time this dispatch was 524 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 3934841 nanoseconds
+OSS: not using its entire time quantum
+OSS: Putting process with PID 25749 into blocked queue
+
+========== PROCESS TABLE ==========
+Current time: 7:693988427
+PCB[0]: PID=25749 Priority=0.0348 Service=0:261124954 Blocked=1
+PCB[1]: PID=25750 Priority=0.0197 Service=0:220801785 Blocked=1
+===================================
+
+
+========== PROCESS TABLE ==========
+Current time: 8:226433822
+PCB[0]: PID=25749 Priority=0.0325 Service=0:261124954 Blocked=1
+PCB[1]: PID=25750 Priority=0.0188 Service=0:220801785 Blocked=1
+===================================
+
+OSS: Process with PID 25750 unblocked at time 8:226433822
+OSS: Dispatching process with PID 25750 priority 0.02 from ready queue at time 8:226438123
+OSS: total time this dispatch was 1301 nanoseconds
+OSS: Receiving that process with PID 25750 ran for 8534901 nanoseconds
+OSS: not using its entire time quantum
+OSS: Putting process with PID 25750 into blocked queue
+OSS: Process with PID 25749 unblocked at time 8:293983427
+OSS: Dispatching process with PID 25749 priority 0.03 from ready queue at time 8:293987780
+OSS: total time this dispatch was 1353 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25749 into ready queue
+OSS: Dispatching process with PID 25749 priority 0.03 from ready queue at time 8:303989257
+OSS: total time this dispatch was 1477 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25749 into ready queue
+OSS: Dispatching process with PID 25749 priority 0.03 from ready queue at time 8:313990165
+OSS: total time this dispatch was 908 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25749 into ready queue
+OSS: Dispatching process with PID 25749 priority 0.04 from ready queue at time 8:323990893
+OSS: total time this dispatch was 728 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 7765055 nanoseconds
+OSS: not using its entire time quantum
+OSS: Putting process with PID 25749 into blocked queue
+
+========== PROCESS TABLE ==========
+Current time: 8:834973024
+PCB[0]: PID=25749 Priority=0.0346 Service=0:298890009 Blocked=1
+PCB[1]: PID=25750 Priority=0.0286 Service=0:229336686 Blocked=1
+===================================
+
+OSS: Process with PID 25750 unblocked at time 8:834973024
+OSS: Dispatching process with PID 25750 priority 0.03 from ready queue at time 8:834977457
+OSS: total time this dispatch was 1433 nanoseconds
+OSS: Receiving that process with PID 25750 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25750 into ready queue
+
+========== PROCESS TABLE ==========
+Current time: 8:844977457
+PCB[0]: PID=25749 Priority=0.0346 Service=0:298890009 Blocked=1
+PCB[1]: PID=25750 Priority=0.0298 Service=0:239336686 Blocked=0
+===================================
+
+OSS: Dispatching process with PID 25750 priority 0.03 from ready queue at time 8:844978255
+OSS: total time this dispatch was 798 nanoseconds
+OSS: Receiving that process with PID 25750 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25750 into ready queue
+
+========== PROCESS TABLE ==========
+Current time: 8:854978255
+PCB[0]: PID=25749 Priority=0.0345 Service=0:298890009 Blocked=1
+PCB[1]: PID=25750 Priority=0.0310 Service=0:249336686 Blocked=0
+===================================
+
+OSS: Dispatching process with PID 25750 priority 0.03 from ready queue at time 8:854979736
+OSS: total time this dispatch was 1481 nanoseconds
+OSS: Receiving that process with PID 25750 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25750 into ready queue
+
+========== PROCESS TABLE ==========
+Current time: 8:864979736
+PCB[0]: PID=25749 Priority=0.0345 Service=0:298890009 Blocked=1
+PCB[1]: PID=25750 Priority=0.0322 Service=0:259336686 Blocked=0
+===================================
+
+OSS: Dispatching process with PID 25750 priority 0.03 from ready queue at time 8:864980871
+OSS: total time this dispatch was 1135 nanoseconds
+OSS: Receiving that process with PID 25750 ran for 7046932 nanoseconds
+OSS: Process with PID 25750 has terminated
+
+========== PROCESS TABLE ==========
+Current time: 8:872027803
+PCB[0]: PID=25749 Priority=0.0345 Service=0:298890009 Blocked=1
+===================================
+
+
+========== PROCESS TABLE ==========
+Current time: 8:931755948
+PCB[0]: PID=25749 Priority=0.0342 Service=0:298890009 Blocked=1
+===================================
+
+OSS: Process with PID 25749 unblocked at time 8:931755948
+OSS: Dispatching process with PID 25749 priority 0.03 from ready queue at time 8:931759461
+OSS: total time this dispatch was 513 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25749 into ready queue
+
+========== PROCESS TABLE ==========
+Current time: 8:941759461
+PCB[0]: PID=25749 Priority=0.0353 Service=0:308890009 Blocked=0
+===================================
+
+OSS: Dispatching process with PID 25749 priority 0.04 from ready queue at time 8:941760826
+OSS: total time this dispatch was 1365 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 4727359 nanoseconds
+OSS: not using its entire time quantum
+OSS: Putting process with PID 25749 into blocked queue
+
+========== PROCESS TABLE ==========
+Current time: 8:946493185
+PCB[0]: PID=25749 Priority=0.0359 Service=0:313617368 Blocked=1
+===================================
+
+
+========== PROCESS TABLE ==========
+Current time: 9:546488185
+PCB[0]: PID=25749 Priority=0.0336 Service=0:313617368 Blocked=1
+===================================
+
+OSS: Process with PID 25749 unblocked at time 9:546488185
+OSS: Dispatching process with PID 25749 priority 0.03 from ready queue at time 9:546492499
+OSS: total time this dispatch was 1314 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25749 into ready queue
+
+========== PROCESS TABLE ==========
+Current time: 9:556492499
+PCB[0]: PID=25749 Priority=0.0346 Service=0:323617368 Blocked=0
+===================================
+
+OSS: Dispatching process with PID 25749 priority 0.03 from ready queue at time 9:556493062
+OSS: total time this dispatch was 563 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25749 into ready queue
+
+========== PROCESS TABLE ==========
+Current time: 9:566493062
+PCB[0]: PID=25749 Priority=0.0356 Service=0:333617368 Blocked=0
+===================================
+
+OSS: Dispatching process with PID 25749 priority 0.04 from ready queue at time 9:566494098
+OSS: total time this dispatch was 1036 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25749 into ready queue
+
+========== PROCESS TABLE ==========
+Current time: 9:576494098
+PCB[0]: PID=25749 Priority=0.0366 Service=0:343617368 Blocked=0
+===================================
+
+OSS: Dispatching process with PID 25749 priority 0.04 from ready queue at time 9:576495023
+OSS: total time this dispatch was 925 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25749 into ready queue
+
+========== PROCESS TABLE ==========
+Current time: 9:586495023
+PCB[0]: PID=25749 Priority=0.0377 Service=0:353617368 Blocked=0
+===================================
+
+OSS: Dispatching process with PID 25749 priority 0.04 from ready queue at time 9:586496192
+OSS: total time this dispatch was 1169 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25749 into ready queue
+
+========== PROCESS TABLE ==========
+Current time: 9:596496192
+PCB[0]: PID=25749 Priority=0.0387 Service=0:363617368 Blocked=0
+===================================
+
+OSS: Dispatching process with PID 25749 priority 0.04 from ready queue at time 9:596496807
+OSS: total time this dispatch was 615 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 1185675 nanoseconds
+OSS: not using its entire time quantum
+OSS: Putting process with PID 25749 into blocked queue
+
+========== PROCESS TABLE ==========
+Current time: 9:597687482
+PCB[0]: PID=25749 Priority=0.0388 Service=0:364803043 Blocked=1
+===================================
+
+
+========== PROCESS TABLE ==========
+Current time: 10:197682482
+PCB[0]: PID=25749 Priority=0.0255 Service=0:364803043 Blocked=1
+===================================
+
+OSS: Process with PID 25749 unblocked at time 10:197682482
+OSS: Dispatching process with PID 25749 priority 0.03 from ready queue at time 10:197686076
+OSS: total time this dispatch was 594 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 10000000 nanoseconds
+OSS: Putting process with PID 25749 into ready queue
+OSS: Dispatching process with PID 25749 priority 0.04 from ready queue at time 10:207687205
+OSS: total time this dispatch was 1129 nanoseconds
+OSS: Receiving that process with PID 25749 ran for 2999618 nanoseconds
+OSS: Process with PID 25749 has terminated
+
+========== FINAL STATISTICS ==========
+Total processes completed: 3
+Average wait time: 5.810990 seconds
+Average CPU utilization: 6.31%
+Average blocked time per process: 5.800000 seconds
+Total idle time: 9.366186 seconds
+Simulation ended at time 10:210686823

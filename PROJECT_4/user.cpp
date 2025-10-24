@@ -12,9 +12,8 @@ File: Simulates the MAIN(oss.cpp)
 #include <sys/shm.h>
 #include <sys/msg.h>
 
-// from oss.cpp
-struct PCB
-{
+// Process Control Block structure (must match oss.cpp)
+struct PCB {
     int occupied;
     pid_t pid;
     int startSeconds;
@@ -28,32 +27,30 @@ struct PCB
     int totalBurstNano;
 };
 
-struct SharedMemory
-{
+// Shared memory structure (must match oss.cpp)
+struct SharedMemory {
     unsigned int clockSeconds;
     unsigned int clockNano;
     PCB processTable[20];
 };
 
-struct Message
-{
+// Message structure for IPC (must match oss.cpp)
+struct Message {
     long mtype;
     int quantum;
 };
 
-int main(int argc, char* argv[])
-{
+int main(int argc, char* argv[]) {
     if (argc < 3) {
         std::cerr << "Usage: " << argv[0] << " <pcb_index> <time_limit>\n";
         return 1;
     }
     int pcbIndex = atoi(argv[1]);
-    double timeLimit = atof(argv[2]);
     
-    // random number generator with unique seed based on PID
+    // Seed random number generator with unique seed based on PID
     srand(getpid());
     
-    // attatching to shared memory
+    // Attach to shared memory
     key_t shmkey = ftok(".", 'S');
     int shmid = shmget(shmkey, sizeof(SharedMemory), 0666);
     if (shmid == -1) {
@@ -65,7 +62,7 @@ int main(int argc, char* argv[])
         perror("shmat");
         return 1;
     }
-    // attaching to message queue
+    // Attach to message queue
     key_t msgkey = ftok(".", 'M');
     int msgid = msgget(msgkey, 0666);
     if (msgid == -1) {
@@ -73,19 +70,22 @@ int main(int argc, char* argv[])
         shmdt(shm);
         return 1;
     }
-    // getting this process's PCB
+    // Get this process's PCB
     PCB& myPCB = shm->processTable[pcbIndex];
-    // getting parent PID
+    
+    // Get parent PID for sending messages back
     pid_t parentPid = getppid();
-    // Chances of being blocked
+    
+    // Probability of being blocked (30% chance)
     const double BLOCK_PROBABILITY = 0.30;
-    // tracking total time used
+    
+    // Track total time used
     int totalTimeUsedSec = 0;
     int totalTimeUsedNano = 0;
     
-    //wait for scheduling messages
+    // wait for scheduling messages
     while (true) {
-        // wait for OSS
+        // Wait for message from OSS
         Message msg;
         if (msgrcv(msgid, &msg, sizeof(msg.quantum), getpid(), 0) == -1) {
             perror("msgrcv");
@@ -98,26 +98,35 @@ int main(int argc, char* argv[])
         long long usedNano = totalTimeUsedSec * 1000000000LL + totalTimeUsedNano;
         long long remainingNano = totalBurstNano - usedNano;
         
-        // response
+        // prepare response
         Message response;
         response.mtype = parentPid;
         
-        // Process Scheduling
-        if (remainingNano <= quantum) {
-            // case 3: Terminate after using remaining time
-            response.quantum = -(int)remainingNano; // Negative indicates termination
-            
-            // sending response and exiting
+        // Determine what to do
+        if (remainingNano <= 0) {
+            // Already used all burst time, terminate immediately
+            response.quantum = -1;
             msgsnd(msgid, &response, sizeof(response.quantum), 0);
             shmdt(shm);
             exit(0);
+        } else if (remainingNano <= quantum) {
+            // Case 3: Terminate after using remaining time
+            response.quantum = -(int)remainingNano;
+            
+            // Send response and exit
+            if (msgsnd(msgid, &response, sizeof(response.quantum), 0) == -1) {
+                perror("msgsnd");
+            }
+            shmdt(shm);
+            exit(0);
         } else {
-            // checking if we should be blocked
+            // Still have more time than one quantum
+            // Check if we should be blocked
             double randVal = (double)rand() / RAND_MAX;
             
             if (randVal < BLOCK_PROBABILITY) {
-                // case 2: Use part of quantum and become blocked
-                int timeUsed = rand() % quantum + 1; // using random portion
+                // Case 2: Use part of quantum and become blocked
+                int timeUsed = rand() % quantum + 1;
                 response.quantum = timeUsed;
                 
                 totalTimeUsedNano += timeUsed;
@@ -126,7 +135,7 @@ int main(int argc, char* argv[])
                     totalTimeUsedNano -= 1000000000;
                 }
             } else {
-                // case 1: using full quantum
+                // Case 1: Use full quantum
                 response.quantum = quantum;
                 
                 totalTimeUsedNano += quantum;
@@ -135,13 +144,14 @@ int main(int argc, char* argv[])
                     totalTimeUsedNano -= 1000000000;
                 }
             }
-            // sending response
+            // send response
             if (msgsnd(msgid, &response, sizeof(response.quantum), 0) == -1) {
                 perror("msgsnd");
                 break;
             }
         }
     }
+    
     shmdt(shm);
     return 0;
 }
