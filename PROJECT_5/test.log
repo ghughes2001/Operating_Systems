@@ -1,6 +1,6 @@
 OSS: System initialized
-OSS: Launching process P0 (PID 8340) at time 0:000000000
-OSS: Launching process P1 (PID 8343) at time 0:300000000
+OSS: Launching process P0 (PID 9169) at time 0:000000000
+OSS: Launching process P1 (PID 9171) at time 0:300000000
 
 Current system resources at time 0:500000000
      R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
@@ -8,404 +8,522 @@ P00   00  00  00  00  00  00  00  00  00  00
 P01   00  00  00  00  00  00  00  00  00  00  
 Avail 05  05  05  05  05  05  05  05  05  05  
 
-OSS: Launching process P2 (PID 8345) at time 0:600000000
-OSS: P0 requesting R4:2 at time 0:950826000
-OSS: Granting P0 request R4:2 at time 0:950826000
-OSS: P2 requesting R4:1 at time 0:982167000
-OSS: Granting P2 request R4:1 at time 0:982167000
-OSS: P0 releasing R4:1 at time 0:986138000
-OSS: P2 releasing R4:1 at time 0:995626000
+OSS: Launching process P2 (PID 9173) at time 0:600000000
 
 Current system resources at time 1:000000000
      R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
-P00   00  00  00  00  01  00  00  00  00  00  
+P00   00  00  00  00  00  00  00  00  00  00  
 P01   00  00  00  00  00  00  00  00  00  00  
 P02   00  00  00  00  00  00  00  00  00  00  
-Avail 05  05  05  05  04  05  05  05  05  05  
+Avail 05  05  05  05  05  05  05  05  05  05  
 
-OSS: P0 requesting R8:1 at time 1:000015000
-OSS: Granting P0 request R8:1 at time 1:000015000
-OSS: P1 requesting R2:1 at time 1:022158000
-OSS: Granting P1 request R2:1 at time 1:022158000
-OSS: P0 requesting R2:2 at time 1:104558000
-OSS: Granting P0 request R2:2 at time 1:104558000
-OSS: P2 requesting R2:1 at time 1:116058000
-OSS: Granting P2 request R2:1 at time 1:116058000
-OSS: P1 requesting R8:2 at time 1:154158000
-OSS: Granting P1 request R8:2 at time 1:154158000
-OSS: P2 releasing R2:1 at time 1:187458000
-OSS: P1 releasing R2:1 at time 1:216958000
-OSS: P0 releasing R2:2 at time 1:226858000
-OSS: P0 requesting R2:2, R3:2 at time 1:228058000
-OSS: Granting P0 request R2:2, R3:2 at time 1:228058000
-OSS: P2 requesting R9:1 at time 1:255358000
-OSS: Granting P2 request R9:1 at time 1:255358000
-OSS: P2 releasing R9:1 at time 1:329758000
-OSS: P0 releasing R4:1 at time 1:348958000
-OSS: P1 requesting R1:2 at time 1:350458000
-OSS: Granting P1 request R1:2 at time 1:350458000
-OSS: P2 requesting R2:2 at time 1:411058000
-OSS: Granting P2 request R2:2 at time 1:411058000
-OSS: P1 releasing R1:2 at time 1:424658000
-OSS: P1 requesting R1:2, R5:2 at time 1:427058000
-OSS: Granting P1 request R1:2, R5:2 at time 1:427058000
-OSS: P0 requesting R2:1 at time 1:429358000
-OSS: Granting P0 request R2:1 at time 1:429358000
-OSS: P2 releasing R2:2 at time 1:466058000
+OSS: P1 requesting R5:2 at time 1:139049000
+OSS: Granting P1 request R5:2 at time 1:139049000
+OSS: P1 requesting R0:1 at time 1:139654000
+OSS: Granting P1 request R0:1 at time 1:139654000
+OSS: P2 requesting R1:1 at time 1:139717000
+OSS: Granting P2 request R1:1 at time 1:139717000
+OSS: P1 requesting R8:1 at time 1:190981000
+OSS: Granting P1 request R8:1 at time 1:190981000
+OSS: P0 requesting R5:2 at time 1:206074000
+OSS: Granting P0 request R5:2 at time 1:206074000
+OSS: P2 requesting R8:1 at time 1:235674000
+OSS: Granting P2 request R8:1 at time 1:235674000
+OSS: P1 requesting R0:2 at time 1:238074000
+OSS: Granting P1 request R0:2 at time 1:238074000
+OSS: P0 requesting R6:1 at time 1:238174000
+OSS: Granting P0 request R6:1 at time 1:238174000
+OSS: P2 requesting R8:1 at time 1:279474000
+OSS: Granting P2 request R8:1 at time 1:279474000
+OSS: P0 releasing R5:2 at time 1:304174000
+OSS: P1 requesting R8:1 at time 1:304274000
+OSS: Granting P1 request R8:1 at time 1:304274000
+OSS: P2 releasing R1:1 at time 1:331774000
+OSS: P0 requesting R4:2 at time 1:361274000
+OSS: Granting P0 request R4:2 at time 1:361274000
+OSS: P1 requesting R9:1 at time 1:427174000
+OSS: Granting P1 request R9:1 at time 1:427174000
+OSS: P0 requesting R7:1 at time 1:427274000
+OSS: Granting P0 request R7:1 at time 1:427274000
+OSS: P2 requesting R1:2 at time 1:441174000
+OSS: Granting P2 request R1:2 at time 1:441174000
 
-Current system resources at time 1:500058000
+Current system resources at time 1:500074000
      R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
-P00   00  00  03  02  00  00  00  00  01  00  
-P01   00  02  00  00  00  02  00  00  02  00  
-P02   00  00  00  00  00  00  00  00  00  00  
-Avail 05  03  02  03  05  03  05  05  02  05  
+P00   00  00  00  00  02  00  01  01  00  00  
+P01   03  00  00  00  00  02  00  00  02  01  
+P02   00  02  00  00  00  00  00  00  02  00  
+Avail 02  03  05  05  03  03  04  04  01  04  
 
-OSS: P0 releasing R8:1 at time 1:500158000
-OSS: P1 releasing R5:1 at time 1:528858000
-OSS: P1 releasing R5:1 at time 1:595258000
-OSS: P2 requesting R3:2 at time 1:595658000
-OSS: Granting P2 request R3:2 at time 1:595658000
-OSS: P0 requesting R5:2 at time 1:629558000
-OSS: Granting P0 request R5:2 at time 1:629558000
-OSS: P1 releasing R1:2 at time 1:655958000
-OSS: P1 requesting R1:2, R6:1 at time 1:657158000
-OSS: Granting P1 request R1:2, R6:1 at time 1:657158000
-OSS: P1 releasing R1:2 at time 1:710058000
-OSS: P1 requesting R1:2, R5:2 at time 1:711458000
-OSS: Granting P1 request R1:2, R5:2 at time 1:711458000
-OSS: P2 requesting R9:1 at time 1:711558000
-OSS: Granting P2 request R9:1 at time 1:711558000
-OSS: P0 requesting R2:1 at time 1:754358000
-OSS: Granting P0 request R2:1 at time 1:754358000
-OSS: P1 releasing R1:2 at time 1:768858000
-OSS: P1 requesting R1:2, R4:1 at time 1:769758000
-OSS: Granting P1 request R1:2, R4:1 at time 1:769758000
+OSS: P2 requesting R0:2 at time 1:508174000
+OSS: Granting P2 request R0:2 at time 1:508174000
+OSS: P0 releasing R7:1 at time 1:547774000
+OSS: P1 releasing R0:3, R5:2 at time 1:547874000
+OSS: P1 requesting R0:3, R5:2, R6:2 at time 1:549674000
+OSS: Granting P1 request R0:3, R5:2, R6:2 at time 1:549674000
+OSS: P2 releasing R1:2 at time 1:555674000
+OSS: P0 releasing R6:1 at time 1:605974000
+OSS: P1 requesting R0:1 at time 1:608374000
+OSS: No instances available for P1, added to block queue at time 1:608374000
+OSS: P2 releasing R0:2 at time 1:613374000
+OSS: Granting blocked process P1 resources at time 1:613474000
+OSS: P2 requesting R0:2, R7:2 at time 1:613974000
+OSS: No instances available for P2, added to block queue at time 1:613974000
+OSS: P1 releasing R9:1 at time 1:672274000
+OSS: P0 requesting R0:2 at time 1:702974000
+OSS: No instances available for P0, added to block queue at time 1:702974000
+OSS: P1 releasing R0:4 at time 1:719574000
+OSS: Granting blocked process P2 resources at time 1:719674000
+OSS: Granting blocked process P0 resources at time 1:719674000
+OSS: P1 requesting R0:4, R2:2 at time 1:720274000
+OSS: No instances available for P1, added to block queue at time 1:720274000
+OSS: P2 releasing R0:2 at time 1:766574000
+OSS: P2 requesting R0:2, R1:2 at time 1:768774000
+OSS: Granting P2 request R0:2, R1:2 at time 1:768774000
 
-Current system resources at time 1:769758000
+Current system resources at time 1:768774000
      R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
-P00   00  00  04  02  00  02  00  00  00  00  
-P01   00  02  00  00  01  02  01  00  02  00  
-P02   00  00  00  02  00  00  00  00  00  01  
-Avail 05  03  01  01  04  01  04  05  03  04  
+P00   02  00  00  00  02  00  00  00  00  00  
+P01   00  00  00  00  00  02  02  00  02  00  
+P02   02  02  00  00  00  00  00  02  02  00  
+Avail 01  03  05  05  03  03  03  03  01  05  
 
-OSS: P2 requesting R1:2 at time 1:831958000
-OSS: Granting P2 request R1:2 at time 1:831958000
-OSS: P1 releasing R6:1 at time 1:876158000
-OSS: P0 requesting R6:1 at time 1:876758000
-OSS: Granting P0 request R6:1 at time 1:876758000
-OSS: P1 releasing R5:2 at time 1:941558000
-OSS: P2 requesting R9:1 at time 1:951558000
-OSS: Granting P2 request R9:1 at time 1:951558000
-OSS: P0 requesting R6:2 at time 1:959158000
-OSS: Granting P0 request R6:2 at time 1:959158000
+OSS: P0 releasing R0:2 at time 1:864074000
+OSS: P0 requesting R0:2, R1:1 at time 1:864974000
+OSS: Granting P0 request R0:2, R1:1 at time 1:864974000
+OSS: P2 requesting R0:1 at time 1:906374000
+OSS: Granting P2 request R0:1 at time 1:906374000
+OSS: P2 releasing R0:3, R1:2 at time 1:975974000
+OSS: P0 releasing R0:2 at time 1:978974000
+OSS: Granting blocked process P1 resources at time 1:979074000
+OSS: P2 requesting R0:3, R1:2, R5:2 at time 1:979074000
+OSS: No instances available for P2, added to block queue at time 1:979074000
+OSS: P0 requesting R0:2, R1:2 at time 1:979174000
+OSS: No instances available for P0, added to block queue at time 1:979174000
 
-Current system resources at time 2:000058000
+Current system resources at time 2:000074000
      R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
-P00   00  00  04  02  00  02  03  00  00  00  
-P01   00  02  00  00  01  00  00  00  02  00  
-P02   00  02  00  02  00  00  00  00  00  02  
-Avail 05  01  01  01  04  03  02  05  03  03  
+P00   00  01  00  00  02  00  00  00  00  00  
+P01   04  00  02  00  00  02  02  00  02  00  
+P02   00  00  00  00  00  00  00  02  02  00  
+Avail 01  04  03  05  03  03  03  03  01  05  
 
-OSS: P2 requesting R1:1 at time 2:027658000
-OSS: Granting P2 request R1:1 at time 2:027658000
-OSS: P1 releasing R1:2 at time 2:046358000
-OSS: P1 requesting R1:2, R2:2 at time 2:047258000
-OSS: No instances available for P1, added to block queue at time 2:047258000
-OSS: P0 releasing R2:4 at time 2:069458000
-OSS: Granting blocked process P1 resources at time 2:069558000
-OSS: P0 requesting R2:4, R3:1 at time 2:070158000
-OSS: No instances available for P0, added to block queue at time 2:070158000
-OSS: P2 releasing R3:1 at time 2:131958000
-OSS: P1 releasing R1:2, R2:2, R4:1 at time 2:132058000
-OSS: Granting blocked process P0 resources at time 2:132158000
-OSS: P1 requesting R1:2, R2:2, R4:1, R6:1 at time 2:134258000
-OSS: No instances available for P1, added to block queue at time 2:134258000
-OSS: P0 releasing R2:4, R3:3 at time 2:193758000
-OSS: Granting blocked process P1 resources at time 2:193858000
-OSS: P0 requesting R2:4, R3:3, R5:1 at time 2:194758000
-OSS: No instances available for P0, added to block queue at time 2:194758000
-OSS: P2 releasing R1:3, R3:1 at time 2:233658000
-OSS: P2 requesting R1:3, R3:1, R6:2 at time 2:234858000
-OSS: No instances available for P2, added to block queue at time 2:234858000
-OSS: P1 releasing R6:1 at time 2:292358000
-OSS: Granting blocked process P2 resources at time 2:292458000
-OSS: P2 releasing R1:3, R3:1 at time 2:348558000
-OSS: P2 requesting R1:3, R3:1, R4:1 at time 2:349758000
-OSS: Granting P2 request R1:3, R3:1, R4:1 at time 2:349758000
-OSS: P1 releasing R4:1 at time 2:349858000
-OSS: P2 requesting R0:2 at time 2:413858000
-OSS: Granting P2 request R0:2 at time 2:413858000
-OSS: P1 releasing R2:2 at time 2:452558000
-OSS: Granting blocked process P0 resources at time 2:452658000
-OSS: P2 releasing R9:1 at time 2:494258000
+OSS: P1 releasing R0:4, R2:2, R5:2, R6:2 at time 2:034374000
+OSS: Granting blocked process P2 resources at time 2:034474000
+OSS: Granting blocked process P0 resources at time 2:034474000
+OSS: P1 requesting R0:4, R2:2, R5:2, R6:2, R7:2 at time 2:034674000
+OSS: No instances available for P1, added to block queue at time 2:034674000
+OSS: P2 releasing R0:3, R1:2 at time 2:089774000
+OSS: P0 terminating and releasing all resources at time 2:091574000
+OSS: Launching process P0 (PID 9176) at time 2:091674000
+OSS: Granting blocked process P1 resources at time 2:091674000
+OSS: P2 requesting R0:3, R1:2, R3:1 at time 2:091674000
+OSS: No instances available for P2, added to block queue at time 2:091674000
+OSS: P1 releasing R0:4 at time 2:144974000
+OSS: Granting blocked process P2 resources at time 2:145074000
+OSS: P1 requesting R0:4, R2:1 at time 2:153274000
+OSS: No instances available for P1, added to block queue at time 2:153274000
+OSS: P2 releasing R0:3 at time 2:245874000
+OSS: Granting blocked process P1 resources at time 2:245974000
+OSS: P2 requesting R0:3, R1:1 at time 2:245974000
+OSS: No instances available for P2, added to block queue at time 2:245974000
+OSS: P1 terminating and releasing all resources at time 2:303774000
+OSS: Granting blocked process P2 resources at time 2:303874000
+OSS: P2 releasing R0:3, R1:3 at time 2:363874000
+OSS: P2 requesting R0:3, R1:3, R2:1 at time 2:366574000
+OSS: Granting P2 request R0:3, R1:3, R2:1 at time 2:366574000
+OSS: Launching process P1 (PID 9177) at time 2:391674000
+OSS: P2 releasing R7:2 at time 2:464374000
 
-Current system resources at time 2:500058000
-     R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
-P00   00  00  04  03  00  03  03  00  00  00  
-P01   00  02  00  00  00  00  00  00  02  00  
-P02   02  03  00  01  01  00  02  00  00  01  
-Avail 03  00  01  01  04  02  00  05  03  04  
-
-OSS: P0 releasing R2:4 at time 2:503858000
-OSS: P0 requesting R2:4, R3:1 at time 2:505658000
-OSS: Granting P0 request R2:4, R3:1 at time 2:505658000
-OSS: P1 releasing R1:2 at time 2:505758000
-OSS: P1 requesting R1:2, R4:1 at time 2:506758000
-OSS: Granting P1 request R1:2, R4:1 at time 2:506758000
-OSS: P2 releasing R0:2 at time 2:529658000
-OSS: P2 requesting R0:2, R1:1 at time 2:531458000
-OSS: No instances available for P2, added to block queue at time 2:531458000
-OSS: P0 releasing R6:1 at time 2:606958000
-OSS: P1 releasing R8:1 at time 2:617658000
-OSS: P0 releasing R6:1 at time 2:669258000
-OSS: P0 releasing R5:3 at time 2:743958000
-OSS: P1 requesting R0:2 at time 2:760358000
-OSS: Granting P1 request R0:2 at time 2:760358000
-OSS: P1 releasing R0:2, R1:2 at time 2:833458000
-OSS: Granting blocked process P2 resources at time 2:833558000
-OSS: P1 requesting R0:2, R1:2, R2:2 at time 2:834358000
-OSS: No instances available for P1, added to block queue at time 2:834358000
-OSS: P0 releasing R6:1 at time 2:847758000
-OSS: P0 releasing R2:3 at time 2:919258000
-OSS: P2 releasing R0:2, R1:4 at time 2:941358000
-OSS: Granting blocked process P1 resources at time 2:941458000
-OSS: P2 requesting R0:2, R1:4, R3:1 at time 2:942558000
-OSS: No instances available for P2, added to block queue at time 2:942558000
-
-Current system resources at time 3:000058000
-     R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
-P00   00  00  01  04  00  00  00  00  00  00  
-P01   02  02  02  00  01  00  00  00  01  00  
-P02   00  00  00  01  01  00  02  00  00  01  
-Avail 03  03  02  00  03  05  03  05  04  04  
-
-OSS: P1 releasing R0:2, R1:2, R2:2 at time 3:000158000
-OSS: P1 requesting R0:2, R1:2, R2:2, R4:2 at time 3:001158000
-OSS: Granting P1 request R0:2, R1:2, R2:2, R4:2 at time 3:001158000
-OSS: P0 terminating and releasing all resources at time 3:002758000
-OSS: Launching process P0 (PID 8347) at time 3:002858000
-OSS: P1 releasing R8:1 at time 3:053358000
-OSS: P1 requesting R5:1 at time 3:140758000
-OSS: Granting P1 request R5:1 at time 3:140758000
-OSS: P1 requesting R9:1 at time 3:281158000
-OSS: Granting P1 request R9:1 at time 3:281158000
-
-Current system resources at time 3:281158000
-     R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
-P00   00  00  00  00  00  00  00  00  00  00  
-P01   02  02  02  00  03  01  00  00  00  01  
-P02   00  00  00  01  01  00  02  00  00  01  
-Avail 03  03  03  04  01  04  03  05  05  03  
-
-OSS: P1 terminating and releasing all resources at time 3:343258000
-OSS: Launching process P1 (PID 8348) at time 3:343358000
-OSS: Granting blocked process P2 resources at time 3:343358000
-OSS: P2 releasing R4:1 at time 3:465758000
-
-Current system resources at time 3:500058000
+Current system resources at time 2:500074000
      R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
 P00   00  00  00  00  00  00  00  00  00  00  
 P01   00  00  00  00  00  00  00  00  00  00  
-P02   02  04  00  02  00  00  02  00  00  01  
-Avail 03  01  05  03  05  05  03  05  05  04  
+P02   03  03  01  01  00  02  00  00  02  00  
+Avail 02  02  04  04  05  03  05  05  03  05  
 
-OSS: P2 requesting R9:1 at time 3:545058000
-OSS: Granting P2 request R9:1 at time 3:545058000
-OSS: P2 terminating and releasing all resources at time 3:610158000
+OSS: P2 releasing R0:3, R1:3, R2:1, R3:1, R5:2 at time 2:572174000
+OSS: P2 requesting R0:3, R1:3, R2:1, R3:1, R5:2, R6:1 at time 2:575174000
+OSS: Granting P2 request R0:3, R1:3, R2:1, R3:1, R5:2, R6:1 at time 2:575174000
+OSS: P2 terminating and releasing all resources at time 2:635574000
 
-Current system resources at time 4:000058000
+Current system resources at time 3:000074000
      R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
 P00   00  00  00  00  00  00  00  00  00  00  
 P01   00  00  00  00  00  00  00  00  00  00  
 Avail 05  05  05  05  05  05  05  05  05  05  
 
 
-Current system resources at time 4:500058000
+Current system resources at time 3:500074000
      R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
 P00   00  00  00  00  00  00  00  00  00  00  
 P01   00  00  00  00  00  00  00  00  00  00  
 Avail 05  05  05  05  05  05  05  05  05  05  
 
 
-Current system resources at time 5:000058000
+Current system resources at time 4:000074000
      R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
 P00   00  00  00  00  00  00  00  00  00  00  
 P01   00  00  00  00  00  00  00  00  00  00  
 Avail 05  05  05  05  05  05  05  05  05  05  
 
 
-Current system resources at time 5:500058000
+Current system resources at time 4:500074000
      R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
 P00   00  00  00  00  00  00  00  00  00  00  
 P01   00  00  00  00  00  00  00  00  00  00  
 Avail 05  05  05  05  05  05  05  05  05  05  
 
 
-Current system resources at time 6:000058000
+Current system resources at time 5:000074000
      R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
 P00   00  00  00  00  00  00  00  00  00  00  
 P01   00  00  00  00  00  00  00  00  00  00  
 Avail 05  05  05  05  05  05  05  05  05  05  
 
 
-Current system resources at time 6:500058000
+Current system resources at time 5:500074000
      R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
 P00   00  00  00  00  00  00  00  00  00  00  
 P01   00  00  00  00  00  00  00  00  00  00  
 Avail 05  05  05  05  05  05  05  05  05  05  
 
 
-Current system resources at time 7:000058000
+Current system resources at time 6:000074000
      R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
 P00   00  00  00  00  00  00  00  00  00  00  
 P01   00  00  00  00  00  00  00  00  00  00  
 Avail 05  05  05  05  05  05  05  05  05  05  
 
 
-Current system resources at time 7:500058000
+Current system resources at time 6:500074000
      R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
 P00   00  00  00  00  00  00  00  00  00  00  
 P01   00  00  00  00  00  00  00  00  00  00  
 Avail 05  05  05  05  05  05  05  05  05  05  
 
-OSS: P0 terminating and releasing all resources at time 7:962958000
 
-Current system resources at time 8:000058000
+Current system resources at time 7:000074000
+     R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
+P00   00  00  00  00  00  00  00  00  00  00  
+P01   00  00  00  00  00  00  00  00  00  00  
+Avail 05  05  05  05  05  05  05  05  05  05  
+
+
+Current system resources at time 7:500074000
+     R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
+P00   00  00  00  00  00  00  00  00  00  00  
+P01   00  00  00  00  00  00  00  00  00  00  
+Avail 05  05  05  05  05  05  05  05  05  05  
+
+
+Current system resources at time 8:000074000
+     R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
+P00   00  00  00  00  00  00  00  00  00  00  
+P01   00  00  00  00  00  00  00  00  00  00  
+Avail 05  05  05  05  05  05  05  05  05  05  
+
+
+Current system resources at time 8:500074000
+     R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
+P00   00  00  00  00  00  00  00  00  00  00  
+P01   00  00  00  00  00  00  00  00  00  00  
+Avail 05  05  05  05  05  05  05  05  05  05  
+
+
+Current system resources at time 9:000074000
+     R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
+P00   00  00  00  00  00  00  00  00  00  00  
+P01   00  00  00  00  00  00  00  00  00  00  
+Avail 05  05  05  05  05  05  05  05  05  05  
+
+
+Current system resources at time 9:500074000
+     R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
+P00   00  00  00  00  00  00  00  00  00  00  
+P01   00  00  00  00  00  00  00  00  00  00  
+Avail 05  05  05  05  05  05  05  05  05  05  
+
+
+Current system resources at time 10:000074000
+     R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
+P00   00  00  00  00  00  00  00  00  00  00  
+P01   00  00  00  00  00  00  00  00  00  00  
+Avail 05  05  05  05  05  05  05  05  05  05  
+
+
+Current system resources at time 10:500074000
+     R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
+P00   00  00  00  00  00  00  00  00  00  00  
+P01   00  00  00  00  00  00  00  00  00  00  
+Avail 05  05  05  05  05  05  05  05  05  05  
+
+
+Current system resources at time 11:000074000
+     R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
+P00   00  00  00  00  00  00  00  00  00  00  
+P01   00  00  00  00  00  00  00  00  00  00  
+Avail 05  05  05  05  05  05  05  05  05  05  
+
+
+Current system resources at time 11:500074000
+     R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
+P00   00  00  00  00  00  00  00  00  00  00  
+P01   00  00  00  00  00  00  00  00  00  00  
+Avail 05  05  05  05  05  05  05  05  05  05  
+
+
+Current system resources at time 12:000074000
+     R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
+P00   00  00  00  00  00  00  00  00  00  00  
+P01   00  00  00  00  00  00  00  00  00  00  
+Avail 05  05  05  05  05  05  05  05  05  05  
+
+
+Current system resources at time 12:500074000
+     R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
+P00   00  00  00  00  00  00  00  00  00  00  
+P01   00  00  00  00  00  00  00  00  00  00  
+Avail 05  05  05  05  05  05  05  05  05  05  
+
+
+Current system resources at time 13:000074000
+     R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
+P00   00  00  00  00  00  00  00  00  00  00  
+P01   00  00  00  00  00  00  00  00  00  00  
+Avail 05  05  05  05  05  05  05  05  05  05  
+
+
+Current system resources at time 13:500074000
+     R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
+P00   00  00  00  00  00  00  00  00  00  00  
+P01   00  00  00  00  00  00  00  00  00  00  
+Avail 05  05  05  05  05  05  05  05  05  05  
+
+
+Current system resources at time 14:000074000
+     R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
+P00   00  00  00  00  00  00  00  00  00  00  
+P01   00  00  00  00  00  00  00  00  00  00  
+Avail 05  05  05  05  05  05  05  05  05  05  
+
+
+Current system resources at time 14:500074000
+     R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
+P00   00  00  00  00  00  00  00  00  00  00  
+P01   00  00  00  00  00  00  00  00  00  00  
+Avail 05  05  05  05  05  05  05  05  05  05  
+
+
+Current system resources at time 15:000074000
+     R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
+P00   00  00  00  00  00  00  00  00  00  00  
+P01   00  00  00  00  00  00  00  00  00  00  
+Avail 05  05  05  05  05  05  05  05  05  05  
+
+
+Current system resources at time 15:500074000
+     R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
+P00   00  00  00  00  00  00  00  00  00  00  
+P01   00  00  00  00  00  00  00  00  00  00  
+Avail 05  05  05  05  05  05  05  05  05  05  
+
+
+Current system resources at time 16:000074000
+     R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
+P00   00  00  00  00  00  00  00  00  00  00  
+P01   00  00  00  00  00  00  00  00  00  00  
+Avail 05  05  05  05  05  05  05  05  05  05  
+
+
+Current system resources at time 16:500074000
+     R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
+P00   00  00  00  00  00  00  00  00  00  00  
+P01   00  00  00  00  00  00  00  00  00  00  
+Avail 05  05  05  05  05  05  05  05  05  05  
+
+
+Current system resources at time 17:000074000
+     R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
+P00   00  00  00  00  00  00  00  00  00  00  
+P01   00  00  00  00  00  00  00  00  00  00  
+Avail 05  05  05  05  05  05  05  05  05  05  
+
+
+Current system resources at time 17:500074000
+     R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
+P00   00  00  00  00  00  00  00  00  00  00  
+P01   00  00  00  00  00  00  00  00  00  00  
+Avail 05  05  05  05  05  05  05  05  05  05  
+
+OSS: P0 terminating and releasing all resources at time 17:917174000
+
+Current system resources at time 18:000074000
      R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
 P01   00  00  00  00  00  00  00  00  00  00  
 Avail 05  05  05  05  05  05  05  05  05  05  
 
 
-Current system resources at time 8:500058000
+Current system resources at time 18:500074000
      R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
 P01   00  00  00  00  00  00  00  00  00  00  
 Avail 05  05  05  05  05  05  05  05  05  05  
 
 
-Current system resources at time 9:000058000
+Current system resources at time 19:000074000
      R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
 P01   00  00  00  00  00  00  00  00  00  00  
 Avail 05  05  05  05  05  05  05  05  05  05  
 
 
-Current system resources at time 9:500058000
+Current system resources at time 19:500074000
      R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
 P01   00  00  00  00  00  00  00  00  00  00  
 Avail 05  05  05  05  05  05  05  05  05  05  
 
 
-Current system resources at time 10:000058000
+Current system resources at time 20:000074000
      R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
 P01   00  00  00  00  00  00  00  00  00  00  
 Avail 05  05  05  05  05  05  05  05  05  05  
 
 
-Current system resources at time 10:500058000
+Current system resources at time 20:500074000
      R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
 P01   00  00  00  00  00  00  00  00  00  00  
 Avail 05  05  05  05  05  05  05  05  05  05  
 
 
-Current system resources at time 11:000058000
+Current system resources at time 21:000074000
      R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
 P01   00  00  00  00  00  00  00  00  00  00  
 Avail 05  05  05  05  05  05  05  05  05  05  
 
 
-Current system resources at time 11:500058000
+Current system resources at time 21:500074000
      R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
 P01   00  00  00  00  00  00  00  00  00  00  
 Avail 05  05  05  05  05  05  05  05  05  05  
 
 
-Current system resources at time 12:000058000
+Current system resources at time 22:000074000
      R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
 P01   00  00  00  00  00  00  00  00  00  00  
 Avail 05  05  05  05  05  05  05  05  05  05  
 
 
-Current system resources at time 12:500058000
+Current system resources at time 22:500074000
      R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
 P01   00  00  00  00  00  00  00  00  00  00  
 Avail 05  05  05  05  05  05  05  05  05  05  
 
 
-Current system resources at time 13:000058000
+Current system resources at time 23:000074000
      R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
 P01   00  00  00  00  00  00  00  00  00  00  
 Avail 05  05  05  05  05  05  05  05  05  05  
 
 
-Current system resources at time 13:500058000
+Current system resources at time 23:500074000
      R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
 P01   00  00  00  00  00  00  00  00  00  00  
 Avail 05  05  05  05  05  05  05  05  05  05  
 
 
-Current system resources at time 14:000058000
+Current system resources at time 24:000074000
      R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
 P01   00  00  00  00  00  00  00  00  00  00  
 Avail 05  05  05  05  05  05  05  05  05  05  
 
 
-Current system resources at time 14:500058000
+Current system resources at time 24:500074000
      R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
 P01   00  00  00  00  00  00  00  00  00  00  
 Avail 05  05  05  05  05  05  05  05  05  05  
 
 
-Current system resources at time 15:000058000
+Current system resources at time 25:000074000
      R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
 P01   00  00  00  00  00  00  00  00  00  00  
 Avail 05  05  05  05  05  05  05  05  05  05  
 
 
-Current system resources at time 15:500058000
+Current system resources at time 25:500074000
      R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
 P01   00  00  00  00  00  00  00  00  00  00  
 Avail 05  05  05  05  05  05  05  05  05  05  
 
 
-Current system resources at time 16:000058000
+Current system resources at time 26:000074000
      R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
 P01   00  00  00  00  00  00  00  00  00  00  
 Avail 05  05  05  05  05  05  05  05  05  05  
 
 
-Current system resources at time 16:500058000
+Current system resources at time 26:500074000
      R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
 P01   00  00  00  00  00  00  00  00  00  00  
 Avail 05  05  05  05  05  05  05  05  05  05  
 
 
-Current system resources at time 17:000058000
+Current system resources at time 27:000074000
      R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
 P01   00  00  00  00  00  00  00  00  00  00  
 Avail 05  05  05  05  05  05  05  05  05  05  
 
 
-Current system resources at time 17:500058000
+Current system resources at time 27:500074000
      R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
 P01   00  00  00  00  00  00  00  00  00  00  
 Avail 05  05  05  05  05  05  05  05  05  05  
 
 
-Current system resources at time 18:000058000
+Current system resources at time 28:000074000
      R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
 P01   00  00  00  00  00  00  00  00  00  00  
 Avail 05  05  05  05  05  05  05  05  05  05  
 
 
-Current system resources at time 18:500058000
+Current system resources at time 28:500074000
      R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
 P01   00  00  00  00  00  00  00  00  00  00  
 Avail 05  05  05  05  05  05  05  05  05  05  
 
-OSS: P1 terminating and releasing all resources at time 18:820658000
+
+Current system resources at time 29:000074000
+     R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
+P01   00  00  00  00  00  00  00  00  00  00  
+Avail 05  05  05  05  05  05  05  05  05  05  
+
+
+Current system resources at time 29:500074000
+     R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
+P01   00  00  00  00  00  00  00  00  00  00  
+Avail 05  05  05  05  05  05  05  05  05  05  
+
+
+Current system resources at time 30:000074000
+     R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
+P01   00  00  00  00  00  00  00  00  00  00  
+Avail 05  05  05  05  05  05  05  05  05  05  
+
+
+Current system resources at time 30:500074000
+     R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
+P01   00  00  00  00  00  00  00  00  00  00  
+Avail 05  05  05  05  05  05  05  05  05  05  
+
+
+Current system resources at time 31:000074000
+     R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
+P01   00  00  00  00  00  00  00  00  00  00  
+Avail 05  05  05  05  05  05  05  05  05  05  
+
+OSS: P1 terminating and releasing all resources at time 31:103974000
 
 === Final Statistics ===
-Total resources requested: 120
-Mass release/reacquire count: 7
-Total requests: 42
-Immediate grants: 42
+Total resources requested: 105
+Mass release/reacquire count: 6
+Total requests: 31
+Immediate grants: 31
 Percentage granted immediately: 100%
