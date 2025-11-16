@@ -1,0 +1,66 @@
+OSS: System initialized
+OSS: Launching process P0 (PID 8229) at time 0:000000000
+OSS: P0 requesting R3:1 at time 0:133576700
+OSS: Granting P0 request R3:1 at time 0:133576700
+OSS: P0 releasing R3:1 at time 0:286276700
+OSS: P0 requesting R6:2 at time 0:390476700
+OSS: Granting P0 request R6:2 at time 0:390476700
+
+Current system resources at time 0:500076700
+     R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
+P00   00  00  00  00  00  00  02  00  00  00  
+Avail 05  05  05  05  05  05  03  05  05  05  
+
+OSS: P0 requesting R3:1 at time 0:551876700
+OSS: Granting P0 request R3:1 at time 0:551876700
+OSS: P0 releasing R6:2 at time 0:637676700
+OSS: P0 requesting R2:1 at time 0:737876700
+OSS: Granting P0 request R2:1 at time 0:737876700
+OSS: P0 requesting R0:2 at time 0:905976700
+OSS: Granting P0 request R0:2 at time 0:905976700
+
+Current system resources at time 1:000076700
+     R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
+P00   02  00  01  01  00  00  00  00  00  00  
+Avail 03  05  04  04  05  05  05  05  05  05  
+
+OSS: P0 requesting R7:2 at time 1:064376700
+OSS: Granting P0 request R7:2 at time 1:064376700
+OSS: P0 releasing R0:2, R2:1, R3:1 at time 1:220876700
+OSS: P0 requesting R0:2, R2:1, R3:1, R6:1 at time 1:222476700
+OSS: Granting P0 request R0:2, R2:1, R3:1, R6:1 at time 1:222476700
+OSS: P0 requesting R7:1 at time 1:381076700
+OSS: Granting P0 request R7:1 at time 1:381076700
+OSS: P0 releasing R0:2, R2:1, R3:1 at time 1:463776700
+OSS: P0 requesting R0:2, R2:1, R3:1, R5:2 at time 1:466076700
+OSS: Granting P0 request R0:2, R2:1, R3:1, R5:2 at time 1:466076700
+
+Current system resources at time 1:500076700
+     R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
+P00   02  00  01  01  00  02  01  03  00  00  
+Avail 03  05  04  04  05  03  04  02  05  05  
+
+OSS: P0 requesting R8:2 at time 1:541476700
+OSS: Granting P0 request R8:2 at time 1:541476700
+OSS: P0 releasing R0:2, R2:1, R3:1, R5:2, R6:1 at time 1:629276700
+OSS: P0 requesting R0:2, R2:1, R3:1, R5:2, R6:1, R7:1 at time 1:630776700
+OSS: Granting P0 request R0:2, R2:1, R3:1, R5:2, R6:1, R7:1 at time 1:630776700
+OSS: P0 releasing R6:1 at time 1:785776700
+OSS: P0 releasing R0:2, R2:1, R3:1 at time 1:871576700
+OSS: P0 requesting R0:2, R2:1, R3:1, R4:2 at time 1:873076700
+OSS: Granting P0 request R0:2, R2:1, R3:1, R4:2 at time 1:873076700
+OSS: P0 releasing R5:2 at time 1:947476700
+
+Current system resources at time 2:000076700
+     R0  R1  R2  R3  R4  R5  R6  R7  R8  R9  
+P00   02  00  01  01  02  00  00  04  02  00  
+Avail 03  05  04  04  03  05  05  01  03  05  
+
+OSS: P0 terminating and releasing all resources at time 2:016676700
+
+=== Final Statistics ===
+Total resources requested: 37
+Mass release/reacquire count: 4
+Total requests: 12
+Immediate grants: 12
+Percentage granted immediately: 100%
