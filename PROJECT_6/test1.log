@@ -1,0 +1,520 @@
+OSS: Starting Operating System Simulator
+OSS: Launching process P0 (PID 64365) at time 0:1000
+OSS: Launching process P1 (PID 64366) at time 0:101000
+
+Current memory layout at time 0:500000000 is:
+        Occupied DirtyBit Process Page
+Frame 0: No 0 -1 -1
+Frame 1: No 0 -1 -1
+Frame 2: No 0 -1 -1
+Frame 3: No 0 -1 -1
+Frame 4: No 0 -1 -1
+Frame 5: No 0 -1 -1
+Frame 6: No 0 -1 -1
+Frame 7: No 0 -1 -1
+Frame 8: No 0 -1 -1
+Frame 9: No 0 -1 -1
+Frame 10: No 0 -1 -1
+Frame 11: No 0 -1 -1
+Frame 12: No 0 -1 -1
+Frame 13: No 0 -1 -1
+Frame 14: No 0 -1 -1
+Frame 15: No 0 -1 -1
+Frame 16: No 0 -1 -1
+Frame 17: No 0 -1 -1
+Frame 18: No 0 -1 -1
+Frame 19: No 0 -1 -1
+Frame 20: No 0 -1 -1
+Frame 21: No 0 -1 -1
+Frame 22: No 0 -1 -1
+Frame 23: No 0 -1 -1
+Frame 24: No 0 -1 -1
+Frame 25: No 0 -1 -1
+Frame 26: No 0 -1 -1
+Frame 27: No 0 -1 -1
+Frame 28: No 0 -1 -1
+Frame 29: No 0 -1 -1
+Frame 30: No 0 -1 -1
+Frame 31: No 0 -1 -1
+Frame 32: No 0 -1 -1
+Frame 33: No 0 -1 -1
+Frame 34: No 0 -1 -1
+Frame 35: No 0 -1 -1
+Frame 36: No 0 -1 -1
+Frame 37: No 0 -1 -1
+Frame 38: No 0 -1 -1
+Frame 39: No 0 -1 -1
+Frame 40: No 0 -1 -1
+Frame 41: No 0 -1 -1
+Frame 42: No 0 -1 -1
+Frame 43: No 0 -1 -1
+Frame 44: No 0 -1 -1
+Frame 45: No 0 -1 -1
+Frame 46: No 0 -1 -1
+Frame 47: No 0 -1 -1
+Frame 48: No 0 -1 -1
+Frame 49: No 0 -1 -1
+Frame 50: No 0 -1 -1
+Frame 51: No 0 -1 -1
+Frame 52: No 0 -1 -1
+Frame 53: No 0 -1 -1
+Frame 54: No 0 -1 -1
+Frame 55: No 0 -1 -1
+Frame 56: No 0 -1 -1
+Frame 57: No 0 -1 -1
+Frame 58: No 0 -1 -1
+Frame 59: No 0 -1 -1
+Frame 60: No 0 -1 -1
+Frame 61: No 0 -1 -1
+Frame 62: No 0 -1 -1
+Frame 63: No 0 -1 -1
+
+Page Tables:
+P0 page table: [ -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 ]
+P1 page table: [ -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 ]
+
+
+Current memory layout at time 1:0 is:
+        Occupied DirtyBit Process Page
+Frame 0: No 0 -1 -1
+Frame 1: No 0 -1 -1
+Frame 2: No 0 -1 -1
+Frame 3: No 0 -1 -1
+Frame 4: No 0 -1 -1
+Frame 5: No 0 -1 -1
+Frame 6: No 0 -1 -1
+Frame 7: No 0 -1 -1
+Frame 8: No 0 -1 -1
+Frame 9: No 0 -1 -1
+Frame 10: No 0 -1 -1
+Frame 11: No 0 -1 -1
+Frame 12: No 0 -1 -1
+Frame 13: No 0 -1 -1
+Frame 14: No 0 -1 -1
+Frame 15: No 0 -1 -1
+Frame 16: No 0 -1 -1
+Frame 17: No 0 -1 -1
+Frame 18: No 0 -1 -1
+Frame 19: No 0 -1 -1
+Frame 20: No 0 -1 -1
+Frame 21: No 0 -1 -1
+Frame 22: No 0 -1 -1
+Frame 23: No 0 -1 -1
+Frame 24: No 0 -1 -1
+Frame 25: No 0 -1 -1
+Frame 26: No 0 -1 -1
+Frame 27: No 0 -1 -1
+Frame 28: No 0 -1 -1
+Frame 29: No 0 -1 -1
+Frame 30: No 0 -1 -1
+Frame 31: No 0 -1 -1
+Frame 32: No 0 -1 -1
+Frame 33: No 0 -1 -1
+Frame 34: No 0 -1 -1
+Frame 35: No 0 -1 -1
+Frame 36: No 0 -1 -1
+Frame 37: No 0 -1 -1
+Frame 38: No 0 -1 -1
+Frame 39: No 0 -1 -1
+Frame 40: No 0 -1 -1
+Frame 41: No 0 -1 -1
+Frame 42: No 0 -1 -1
+Frame 43: No 0 -1 -1
+Frame 44: No 0 -1 -1
+Frame 45: No 0 -1 -1
+Frame 46: No 0 -1 -1
+Frame 47: No 0 -1 -1
+Frame 48: No 0 -1 -1
+Frame 49: No 0 -1 -1
+Frame 50: No 0 -1 -1
+Frame 51: No 0 -1 -1
+Frame 52: No 0 -1 -1
+Frame 53: No 0 -1 -1
+Frame 54: No 0 -1 -1
+Frame 55: No 0 -1 -1
+Frame 56: No 0 -1 -1
+Frame 57: No 0 -1 -1
+Frame 58: No 0 -1 -1
+Frame 59: No 0 -1 -1
+Frame 60: No 0 -1 -1
+Frame 61: No 0 -1 -1
+Frame 62: No 0 -1 -1
+Frame 63: No 0 -1 -1
+
+Page Tables:
+P0 page table: [ -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 ]
+P1 page table: [ -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 ]
+
+OSS: P1 requesting write of address 9945 at time 1:153303000
+OSS: Address 9945 is not in a frame, pagefault
+OSS: Clearing frame 0 and swapping in P1 page 9
+OSS: P0 requesting read of address 6217 at time 1:153517000
+OSS: Address 6217 is not in a frame, pagefault
+OSS: Clearing frame 1 and swapping in P0 page 6
+OSS: Indicating to P1 that write has happened to address 9945
+OSS: P1 requesting read of address 12116 at time 1:167315000
+OSS: Address 12116 is not in a frame, pagefault
+OSS: Clearing frame 2 and swapping in P1 page 11
+OSS: Indicating to P0 that read has happened to address 6217
+OSS: P0 requesting read of address 15202 at time 1:167538000
+OSS: Address 15202 is not in a frame, pagefault
+OSS: Clearing frame 3 and swapping in P0 page 14
+OSS: Indicating to P1 that read has happened to address 12116
+OSS: P1 requesting read of address 8565 at time 1:181335000
+OSS: Address 8565 is not in a frame, pagefault
+OSS: Clearing frame 4 and swapping in P1 page 8
+OSS: Indicating to P0 that read has happened to address 15202
+OSS: P0 requesting write of address 2907 at time 1:181557000
+OSS: Address 2907 is not in a frame, pagefault
+OSS: Clearing frame 5 and swapping in P0 page 2
+OSS: Indicating to P1 that read has happened to address 8565
+OSS: P1 requesting read of address 15139 at time 1:195355000
+OSS: Address 15139 is not in a frame, pagefault
+OSS: Clearing frame 6 and swapping in P1 page 14
+OSS: Indicating to P0 that write has happened to address 2907
+OSS: P0 requesting read of address 11292 at time 1:195576000
+OSS: Address 11292 is not in a frame, pagefault
+OSS: Clearing frame 7 and swapping in P0 page 11
+OSS: Indicating to P1 that read has happened to address 15139
+OSS: P1 requesting read of address 8279 at time 1:209374000
+OSS: Address 8279 in frame 4, giving data to P1 at time 1:209374100
+OSS: P1 requesting write of address 10288 at time 1:209388100
+OSS: Address 10288 is not in a frame, pagefault
+OSS: Clearing frame 8 and swapping in P1 page 10
+OSS: Indicating to P0 that read has happened to address 11292
+OSS: P0 requesting write of address 2566 at time 1:209595000
+OSS: Address 2566 in frame 5, giving data to P0 at time 1:209595100
+OSS: P0 requesting read of address 11816 at time 1:209601100
+OSS: Address 11816 in frame 7, giving data to P0 at time 1:209601200
+OSS: P0 requesting read of address 11070 at time 1:209619200
+OSS: Address 11070 is not in a frame, pagefault
+OSS: Clearing frame 9 and swapping in P0 page 10
+OSS: Indicating to P1 that write has happened to address 10288
+OSS: P1 requesting read of address 14430 at time 1:223407100
+OSS: Address 14430 in frame 6, giving data to P1 at time 1:223407200
+OSS: P1 requesting read of address 13641 at time 1:223425200
+OSS: Address 13641 is not in a frame, pagefault
+OSS: Clearing frame 10 and swapping in P1 page 13
+OSS: Indicating to P0 that read has happened to address 11070
+OSS: P0 requesting write of address 4986 at time 1:223638200
+OSS: Address 4986 is not in a frame, pagefault
+OSS: Clearing frame 11 and swapping in P0 page 4
+OSS: Indicating to P1 that read has happened to address 13641
+OSS: P1 requesting write of address 3460 at time 1:237444200
+OSS: Address 3460 is not in a frame, pagefault
+OSS: Clearing frame 12 and swapping in P1 page 3
+OSS: Indicating to P0 that write has happened to address 4986
+OSS: P0 requesting write of address 8463 at time 1:237657200
+OSS: Address 8463 is not in a frame, pagefault
+OSS: Clearing frame 13 and swapping in P0 page 8
+OSS: Indicating to P1 that write has happened to address 3460
+OSS: P1 requesting write of address 6921 at time 1:251463200
+OSS: Address 6921 is not in a frame, pagefault
+OSS: Clearing frame 14 and swapping in P1 page 6
+OSS: Indicating to P0 that write has happened to address 8463
+OSS: P0 requesting read of address 5770 at time 1:251676200
+OSS: Address 5770 is not in a frame, pagefault
+OSS: Clearing frame 15 and swapping in P0 page 5
+OSS: Indicating to P1 that write has happened to address 6921
+OSS: P1 requesting write of address 14363 at time 1:265482200
+OSS: Address 14363 in frame 6, giving data to P1 at time 1:265482300
+OSS: P1 requesting read of address 3902 at time 1:265498300
+OSS: Address 3902 in frame 12, giving data to P1 at time 1:265498400
+OSS: P1 terminating at time 1:265515400
+     Total Memory Accesses: 12
+     Page Faults: 8
+     Effective Memory Access Time: 0 ns
+OSS: Indicating to P0 that read has happened to address 5770
+OSS: P0 requesting read of address 14155 at time 1:265697200
+OSS: Address 14155 is not in a frame, pagefault
+OSS: Clearing frame 0 and swapping in P0 page 13
+OSS: Indicating to P0 that read has happened to address 14155
+OSS: P0 requesting read of address 10547 at time 1:279715200
+OSS: Address 10547 in frame 9, giving data to P0 at time 1:279715300
+OSS: P0 requesting read of address 7976 at time 1:279731300
+OSS: Address 7976 is not in a frame, pagefault
+OSS: Clearing frame 2 and swapping in P0 page 7
+OSS: Indicating to P0 that read has happened to address 7976
+OSS: P0 requesting read of address 1579 at time 1:293751300
+OSS: Address 1579 is not in a frame, pagefault
+OSS: Clearing frame 4 and swapping in P0 page 1
+OSS: Indicating to P0 that read has happened to address 1579
+OSS: P0 requesting read of address 13631 at time 1:307770300
+OSS: Address 13631 in frame 0, giving data to P0 at time 1:307770400
+OSS: P0 requesting read of address 7514 at time 1:307790400
+OSS: Address 7514 in frame 2, giving data to P0 at time 1:307790500
+OSS: P0 requesting read of address 2428 at time 1:307800500
+OSS: Address 2428 in frame 5, giving data to P0 at time 1:307800600
+OSS: P0 requesting read of address 12852 at time 1:307810600
+OSS: Address 12852 is not in a frame, pagefault
+OSS: Clearing frame 6 and swapping in P0 page 12
+OSS: Indicating to P0 that read has happened to address 12852
+OSS: P0 requesting write of address 607 at time 1:321830600
+OSS: Address 607 is not in a frame, pagefault
+OSS: Clearing frame 8 and swapping in P0 page 0
+OSS: Indicating to P0 that write has happened to address 607
+OSS: P0 requesting write of address 7267 at time 1:335849600
+OSS: Address 7267 in frame 2, giving data to P0 at time 1:335849700
+OSS: Launching process P1 (PID 64372) at time 1:335850700
+OSS: P0 requesting read of address 7061 at time 1:335850700
+OSS: Address 7061 in frame 1, giving data to P0 at time 1:335850800
+OSS: P0 requesting read of address 3077 at time 1:335869800
+OSS: Address 3077 is not in a frame, pagefault
+OSS: Clearing frame 10 and swapping in P0 page 3
+OSS: P1 requesting write of address 13352 at time 1:343940800
+OSS: Address 13352 is not in a frame, pagefault
+OSS: Clearing frame 12 and swapping in P1 page 13
+OSS: Indicating to P0 that read has happened to address 3077
+OSS: P0 requesting read of address 3315 at time 1:349888800
+OSS: Address 3315 in frame 10, giving data to P0 at time 1:349888900
+OSS: P0 terminating at time 1:349902900
+     Total Memory Accesses: 23
+     Page Faults: 14
+     Effective Memory Access Time: 0 ns
+OSS: Indicating to P1 that write has happened to address 13352
+OSS: P1 requesting read of address 4281 at time 1:357962800
+OSS: Address 4281 is not in a frame, pagefault
+OSS: Clearing frame 0 and swapping in P1 page 4
+OSS: Indicating to P1 that read has happened to address 4281
+OSS: P1 requesting read of address 15067 at time 1:371984800
+OSS: Address 15067 is not in a frame, pagefault
+OSS: Clearing frame 1 and swapping in P1 page 14
+OSS: Indicating to P1 that read has happened to address 15067
+OSS: P1 requesting read of address 5216 at time 1:386002800
+OSS: Address 5216 is not in a frame, pagefault
+OSS: Clearing frame 2 and swapping in P1 page 5
+OSS: Indicating to P1 that read has happened to address 5216
+OSS: P1 requesting read of address 5166 at time 1:400022800
+OSS: Address 5166 in frame 2, giving data to P1 at time 1:400022900
+OSS: P1 requesting write of address 7021 at time 1:400041900
+OSS: Address 7021 is not in a frame, pagefault
+OSS: Clearing frame 3 and swapping in P1 page 6
+OSS: Indicating to P1 that write has happened to address 7021
+OSS: P1 requesting read of address 5927 at time 1:414060900
+OSS: Address 5927 in frame 2, giving data to P1 at time 1:414061000
+OSS: P1 requesting read of address 7750 at time 1:414081000
+OSS: Address 7750 is not in a frame, pagefault
+OSS: Clearing frame 4 and swapping in P1 page 7
+OSS: Indicating to P1 that read has happened to address 7750
+OSS: P1 requesting write of address 418 at time 1:428092000
+OSS: Address 418 is not in a frame, pagefault
+OSS: Clearing frame 5 and swapping in P1 page 0
+OSS: Indicating to P1 that write has happened to address 418
+OSS: P1 requesting read of address 10792 at time 1:442112000
+OSS: Address 10792 is not in a frame, pagefault
+OSS: Clearing frame 6 and swapping in P1 page 10
+OSS: Launching process P0 (PID 64373) at time 1:442113000
+OSS: P0 requesting read of address 1721 at time 1:450484000
+OSS: Address 1721 is not in a frame, pagefault
+OSS: Clearing frame 7 and swapping in P0 page 1
+OSS: Indicating to P1 that read has happened to address 10792
+OSS: P1 requesting read of address 16126 at time 1:456131000
+OSS: Address 16126 is not in a frame, pagefault
+OSS: Clearing frame 8 and swapping in P1 page 15
+OSS: Indicating to P0 that read has happened to address 1721
+OSS: P0 requesting read of address 1195 at time 1:464494000
+OSS: Address 1195 in frame 7, giving data to P0 at time 1:464494100
+OSS: P0 requesting read of address 4340 at time 1:464513100
+OSS: Address 4340 is not in a frame, pagefault
+OSS: Clearing frame 9 and swapping in P0 page 4
+OSS: Indicating to P1 that read has happened to address 16126
+OSS: P1 requesting write of address 13846 at time 1:470150000
+OSS: Address 13846 in frame 12, giving data to P1 at time 1:470150100
+OSS: P1 requesting read of address 2101 at time 1:470168100
+OSS: Address 2101 is not in a frame, pagefault
+OSS: Clearing frame 10 and swapping in P1 page 2
+OSS: Indicating to P0 that read has happened to address 4340
+OSS: P0 requesting write of address 9063 at time 1:478533100
+OSS: Address 9063 is not in a frame, pagefault
+OSS: Clearing frame 11 and swapping in P0 page 8
+OSS: Indicating to P1 that read has happened to address 2101
+OSS: P1 requesting read of address 12259 at time 1:484187100
+OSS: Address 12259 is not in a frame, pagefault
+OSS: Clearing frame 13 and swapping in P1 page 11
+OSS: Indicating to P0 that write has happened to address 9063
+OSS: P0 requesting read of address 11902 at time 1:492552100
+OSS: Address 11902 is not in a frame, pagefault
+OSS: Clearing frame 14 and swapping in P0 page 11
+OSS: Indicating to P1 that read has happened to address 12259
+OSS: P1 requesting read of address 13975 at time 1:498206100
+OSS: Address 13975 in frame 12, giving data to P1 at time 1:498206200
+OSS: P1 terminating at time 1:498216200
+     Total Memory Accesses: 27
+     Page Faults: 19
+     Effective Memory Access Time: 0 ns
+
+Current memory layout at time 1:506552100 is:
+        Occupied DirtyBit Process Page
+Frame 0: No 0 -1 -1
+Frame 1: No 0 -1 -1
+Frame 2: No 0 -1 -1
+Frame 3: No 0 -1 -1
+Frame 4: No 0 -1 -1
+Frame 5: No 0 -1 -1
+Frame 6: No 0 -1 -1
+Frame 7: Yes 0 0 1
+Frame 8: No 0 -1 -1
+Frame 9: Yes 0 0 4
+Frame 10: No 0 -1 -1
+Frame 11: Yes 1 0 8
+Frame 12: No 0 -1 -1
+Frame 13: No 0 -1 -1
+Frame 14: Yes 0 0 11
+Frame 15: No 0 -1 -1
+Frame 16: No 0 -1 -1
+Frame 17: No 0 -1 -1
+Frame 18: No 0 -1 -1
+Frame 19: No 0 -1 -1
+Frame 20: No 0 -1 -1
+Frame 21: No 0 -1 -1
+Frame 22: No 0 -1 -1
+Frame 23: No 0 -1 -1
+Frame 24: No 0 -1 -1
+Frame 25: No 0 -1 -1
+Frame 26: No 0 -1 -1
+Frame 27: No 0 -1 -1
+Frame 28: No 0 -1 -1
+Frame 29: No 0 -1 -1
+Frame 30: No 0 -1 -1
+Frame 31: No 0 -1 -1
+Frame 32: No 0 -1 -1
+Frame 33: No 0 -1 -1
+Frame 34: No 0 -1 -1
+Frame 35: No 0 -1 -1
+Frame 36: No 0 -1 -1
+Frame 37: No 0 -1 -1
+Frame 38: No 0 -1 -1
+Frame 39: No 0 -1 -1
+Frame 40: No 0 -1 -1
+Frame 41: No 0 -1 -1
+Frame 42: No 0 -1 -1
+Frame 43: No 0 -1 -1
+Frame 44: No 0 -1 -1
+Frame 45: No 0 -1 -1
+Frame 46: No 0 -1 -1
+Frame 47: No 0 -1 -1
+Frame 48: No 0 -1 -1
+Frame 49: No 0 -1 -1
+Frame 50: No 0 -1 -1
+Frame 51: No 0 -1 -1
+Frame 52: No 0 -1 -1
+Frame 53: No 0 -1 -1
+Frame 54: No 0 -1 -1
+Frame 55: No 0 -1 -1
+Frame 56: No 0 -1 -1
+Frame 57: No 0 -1 -1
+Frame 58: No 0 -1 -1
+Frame 59: No 0 -1 -1
+Frame 60: No 0 -1 -1
+Frame 61: No 0 -1 -1
+Frame 62: No 0 -1 -1
+Frame 63: No 0 -1 -1
+
+Page Tables:
+P0 page table: [ -1 7 -1 -1 9 -1 -1 -1 11 -1 -1 14 -1 -1 -1 -1 ]
+
+OSS: Launching process P1 (PID 64374) at time 1:506553100
+OSS: Indicating to P0 that read has happened to address 11902
+OSS: P0 requesting read of address 6516 at time 1:506570100
+OSS: Address 6516 is not in a frame, pagefault
+OSS: Clearing frame 0 and swapping in P0 page 6
+OSS: P1 requesting write of address 4426 at time 1:513389100
+OSS: Address 4426 is not in a frame, pagefault
+OSS: Clearing frame 1 and swapping in P1 page 4
+OSS: Indicating to P0 that read has happened to address 6516
+OSS: P0 requesting write of address 8263 at time 1:520589100
+OSS: Address 8263 in frame 11, giving data to P0 at time 1:520589200
+OSS: P0 requesting write of address 20 at time 1:520602200
+OSS: Address 20 is not in a frame, pagefault
+OSS: Clearing frame 2 and swapping in P0 page 0
+OSS: Indicating to P1 that write has happened to address 4426
+OSS: P1 requesting write of address 13469 at time 1:527409100
+OSS: Address 13469 is not in a frame, pagefault
+OSS: Clearing frame 3 and swapping in P1 page 13
+OSS: Indicating to P0 that write has happened to address 20
+OSS: P0 requesting read of address 11799 at time 1:534621200
+OSS: Address 11799 in frame 14, giving data to P0 at time 1:534621300
+OSS: P0 requesting write of address 11943 at time 1:534632300
+OSS: Address 11943 in frame 14, giving data to P0 at time 1:534632400
+OSS: P0 requesting write of address 16334 at time 1:534652400
+OSS: Address 16334 is not in a frame, pagefault
+OSS: Clearing frame 4 and swapping in P0 page 15
+OSS: Indicating to P1 that write has happened to address 13469
+OSS: P1 requesting read of address 11022 at time 1:541428100
+OSS: Address 11022 is not in a frame, pagefault
+OSS: Clearing frame 5 and swapping in P1 page 10
+OSS: Indicating to P0 that write has happened to address 16334
+OSS: P0 requesting write of address 5153 at time 1:548672400
+OSS: Address 5153 is not in a frame, pagefault
+OSS: Clearing frame 6 and swapping in P0 page 5
+OSS: Indicating to P1 that read has happened to address 11022
+OSS: P1 requesting write of address 11887 at time 1:555447100
+OSS: Address 11887 is not in a frame, pagefault
+OSS: Clearing frame 8 and swapping in P1 page 11
+OSS: Indicating to P0 that write has happened to address 5153
+OSS: P0 requesting write of address 11511 at time 1:562691400
+OSS: Address 11511 in frame 14, giving data to P0 at time 1:562691500
+OSS: P0 requesting read of address 15641 at time 1:562705500
+OSS: Address 15641 in frame 4, giving data to P0 at time 1:562705600
+OSS: P0 requesting read of address 1223 at time 1:562716600
+OSS: Address 1223 in frame 7, giving data to P0 at time 1:562716700
+OSS: P0 requesting read of address 6717 at time 1:562730700
+OSS: Address 6717 in frame 0, giving data to P0 at time 1:562730800
+OSS: P0 requesting write of address 7846 at time 1:562749800
+OSS: Address 7846 is not in a frame, pagefault
+OSS: Clearing frame 10 and swapping in P0 page 7
+OSS: Indicating to P1 that write has happened to address 11887
+OSS: P1 requesting read of address 1231 at time 1:569466100
+OSS: Address 1231 is not in a frame, pagefault
+OSS: Clearing frame 12 and swapping in P1 page 1
+OSS: Indicating to P0 that write has happened to address 7846
+OSS: P0 requesting write of address 7268 at time 1:576769800
+OSS: Address 7268 in frame 10, giving data to P0 at time 1:576769900
+OSS: P0 requesting read of address 3149 at time 1:576786900
+OSS: Address 3149 is not in a frame, pagefault
+OSS: Clearing frame 13 and swapping in P0 page 3
+OSS: Indicating to P1 that read has happened to address 1231
+OSS: P1 requesting read of address 6012 at time 1:583485100
+OSS: Address 6012 is not in a frame, pagefault
+OSS: Clearing frame 15 and swapping in P1 page 5
+OSS: Indicating to P0 that read has happened to address 3149
+OSS: P0 requesting read of address 14196 at time 1:590805900
+OSS: Address 14196 is not in a frame, pagefault
+OSS: Clearing frame 16 and swapping in P0 page 13
+OSS: Indicating to P1 that read has happened to address 6012
+OSS: P1 requesting read of address 11623 at time 1:597504100
+OSS: Address 11623 in frame 8, giving data to P1 at time 1:597504200
+OSS: P1 requesting write of address 9699 at time 1:597517200
+OSS: Address 9699 is not in a frame, pagefault
+OSS: Clearing frame 17 and swapping in P1 page 9
+OSS: Indicating to P0 that read has happened to address 14196
+OSS: P0 requesting write of address 1529 at time 1:604824900
+OSS: Address 1529 in frame 7, giving data to P0 at time 1:604825000
+OSS: P0 terminating at time 1:604837000
+     Total Memory Accesses: 44
+     Page Faults: 25
+     Effective Memory Access Time: 0 ns
+OSS: Indicating to P1 that write has happened to address 9699
+OSS: P1 requesting write of address 6796 at time 1:611538200
+OSS: Address 6796 is not in a frame, pagefault
+OSS: Clearing frame 0 and swapping in P1 page 6
+OSS: Indicating to P1 that write has happened to address 6796
+OSS: P1 requesting write of address 13094 at time 1:625557200
+OSS: Address 13094 is not in a frame, pagefault
+OSS: Clearing frame 2 and swapping in P1 page 12
+OSS: Indicating to P1 that write has happened to address 13094
+OSS: P1 requesting write of address 158 at time 1:639581200
+OSS: Address 158 is not in a frame, pagefault
+OSS: Clearing frame 4 and swapping in P1 page 0
+OSS: Indicating to P1 that write has happened to address 158
+OSS: P1 terminating at time 1:653602200
+     Total Memory Accesses: 38
+     Page Faults: 29
+     Effective Memory Access Time: 0 ns
+
+Final Statistics:
+Total Page Faults: 54
+Total Reads: 50
+Total Writes: 32
+Total Memory Accesses: 82
+Page Fault Rate: 65.8537%
