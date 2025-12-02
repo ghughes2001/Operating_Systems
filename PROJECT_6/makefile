@@ -12,6 +12,7 @@ user: user.cpp shared.h
 
 clean:
 	rm -f $(TARGETS) *.o logfile.txt
+	rm -rf *.dSYM
 	ipcrm -a 2>/dev/null || true
 
 .PHONY: all clean
